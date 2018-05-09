@@ -486,7 +486,7 @@ var i6 = __webpack_require__(/*! ./article.component */ "./src/app/components/ar
 var styles_ArticleComponent = [i0.styles];
 var RenderType_ArticleComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_ArticleComponent, data: {} });
 exports.RenderType_ArticleComponent = RenderType_ArticleComponent;
-function View_ArticleComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "container pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "div", [["class", "row justify-content-md-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col col-sm-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "markdown", [], null, null, null, i2.View_MarkdownComponent_0, i2.RenderType_MarkdownComponent)), i1.ɵdid(4, 4243456, null, 0, i3.MarkdownComponent, [i1.ElementRef, i4.MarkdownService], { data: [0, "data"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.article.text; _ck(_v, 4, 0, currVal_0); }, null); }
+function View_ArticleComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "container pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "div", [["class", "row justify-content-md-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col col-sm-12 article"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "markdown", [], null, null, null, i2.View_MarkdownComponent_0, i2.RenderType_MarkdownComponent)), i1.ɵdid(4, 4243456, null, 0, i3.MarkdownComponent, [i1.ElementRef, i4.MarkdownService], { data: [0, "data"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.article.text; _ck(_v, 4, 0, currVal_0); }, null); }
 function View_ArticleComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 4, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i5.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "bg-secondary": 0 }), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_ArticleComponent_1)), i1.ɵdid(4, 16384, null, 0, i5.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "container-fluid"; var currVal_1 = _ck(_v, 2, 0, (_co.article.version === "muted")); _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_2 = _co.article; _ck(_v, 4, 0, currVal_2); }, null); }
 exports.View_ArticleComponent_0 = View_ArticleComponent_0;
 function View_ArticleComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-article", [], null, null, null, View_ArticleComponent_0, RenderType_ArticleComponent)), i1.ɵdid(1, 114688, null, 0, i6.ArticleComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
@@ -513,7 +513,7 @@ exports.ArticleComponentNgFactory = ArticleComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [""];
+var styles = [".article[_ngcontent-%COMP%] {\n  max-width: 100%;\n  overflow: hidden; }"];
 exports.styles = styles;
 
 
@@ -1429,7 +1429,7 @@ function View_TopBarComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0
     } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(3, 1), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["src", "./assets/images/logo.jpg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 1, "button", [["aria-expanded", "false"], ["aria-label", "Toggle navigation"], ["class", "navbar-toggler btn"], ["type", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.openMenu() !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 0, "span", [["class", "navbar-toggler-icon"]], null, null, null, null, null))], function (_ck, _v) { var currVal_2 = _ck(_v, 3, 0, "/"); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); }); }
+    } return ad; }, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 0, "span", [["class", "navbar-toggler-icon"]], null, null, null, null, null))], function (_ck, _v) { var currVal_2 = _ck(_v, 3, 0, "/start"); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); }); }
 exports.View_TopBarComponent_0 = View_TopBarComponent_0;
 function View_TopBarComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-top-bar", [], null, null, null, View_TopBarComponent_0, RenderType_TopBarComponent)), i1.ɵdid(1, 114688, null, 0, i4.TopBarComponent, [i5.MenuService], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_TopBarComponent_Host_0 = View_TopBarComponent_Host_0;
@@ -1681,11 +1681,10 @@ var ContentService = /** @class */ (function () {
                 type: 'hero',
                 hero: {
                     top: 'Välkommen till',
-                    header: 'Östra Lindås Samfällighet',
-                    p: 'Östra Lindås anläggningssamfällighetsförening beläget öster om gamla Särövägen i södra Billdal.',
+                    header: 'Östra Lindås Samfällighet2',
                     image: './assets/images/bg.jpg',
                     version: 'light',
-                    size: 'full',
+                    size: 'large',
                 }
             },
             styrelsenHero: {

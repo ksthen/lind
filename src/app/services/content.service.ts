@@ -213,7 +213,7 @@ export class ContentService {
         type: 'hero',
         hero: {
           top: 'Välkommen till',
-          header: 'Östra Lindås Samfällighet',
+          header: 'Östra Lindås Samfällighet2',
           image: './assets/images/bg.jpg',
           version: 'light',
           size: 'large',           
