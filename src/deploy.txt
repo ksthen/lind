@@ -1,3 +1,16 @@
+
+
+Setup:
+git config git-ftp.syncroot build/
+git config git-ftp.url ftp://example.com/public_html/
+# maybe configure username and password as well
+git ftp init
+# do other stuff and commit
+git ftp push
+
+
+
+
 // Prerender the app
 npm run build:prerender
 
