@@ -1,8 +1,17 @@
 
 
 Setup:
+
+brew install git
+brew install curl --with-libssh2
+brew install brotli
+brew install git-ftp
+
 git config git-ftp.syncroot build/
 git config git-ftp.url ftp://example.com/public_html/
+git config git-ftp.user "ftp-user"
+git config git-ftp.password "secr3t"
+
 # maybe configure username and password as well
 git ftp init
 # do other stuff and commit

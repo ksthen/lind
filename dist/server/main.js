@@ -853,7 +853,7 @@ exports.HeroComponentNgFactory = HeroComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".jumbotron[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100%;\n  position: relative; }\n\n.jumbotron-fluid[_ngcontent-%COMP%] {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.small[_ngcontent-%COMP%] {\n  height: calc(60vh - 80px); }\n\n.medium[_ngcontent-%COMP%] {\n  height: calc(80vh - 80px); }\n\n.large[_ngcontent-%COMP%] {\n  height: calc(90vh - 80px); }\n\n.full[_ngcontent-%COMP%] {\n  height: calc(100vh - 80px); }\n\n.container[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1; }\n\n.scroll-container[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 5%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1;\n  background-color: rgba(255, 255, 255, 0.3);\n  width: 30px;\n  height: 30px;\n  padding: 5px;\n  overflow: hidden;\n  cursor: pointer;\n  fill: white;\n  color: white;\n  stroke: white; }\n\n.scroll-container[_ngcontent-%COMP%]   line[_ngcontent-%COMP%] {\n    stroke: white; }\n\n.overlay-light[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.5);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: black; }\n\n.overlay-dark[_ngcontent-%COMP%] {\n  background-color: rgba(0, 0, 0, 0.3);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: white; }\n\n.btn-outline-light[_ngcontent-%COMP%]:hover {\n  color: #212529 !important; }"];
+var styles = [".jumbotron[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100%;\n  position: relative; }\n\n.jumbotron-fluid[_ngcontent-%COMP%] {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.small[_ngcontent-%COMP%] {\n  height: calc(60vh - 80px); }\n\n.medium[_ngcontent-%COMP%] {\n  height: calc(80vh - 80px); }\n\n.large[_ngcontent-%COMP%] {\n  height: calc(90vh - 80px); }\n\n.full[_ngcontent-%COMP%] {\n  height: calc(100vh - 80px); }\n\n.container[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1; }\n\n.scroll-container[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 5%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1;\n  background-color: rgba(255, 255, 255, 0.3);\n  width: 30px;\n  height: 30px;\n  padding: 5px;\n  overflow: hidden;\n  cursor: pointer;\n  fill: white;\n  color: white;\n  stroke: white; }\n\n.scroll-container[_ngcontent-%COMP%]   line[_ngcontent-%COMP%] {\n    stroke: white; }\n\n.overlay-light[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.5);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: black; }\n\n.overlay-dark[_ngcontent-%COMP%] {\n  background-color: rgba(0, 0, 0, 0.4);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: white; }\n\n.btn-outline-light[_ngcontent-%COMP%]:hover {\n  color: #212529 !important; }"];
 exports.styles = styles;
 
 
@@ -1018,7 +1018,7 @@ function View_FooterComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0
         ad = (pd_1 && ad);
     } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(3, 1), (_l()(), i1.ɵted(4, null, ["", ""]))], function (_ck, _v) { var currVal_2 = ("/" + _ck(_v, 3, 0, _v.context.$implicit.link)); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.title; _ck(_v, 4, 0, currVal_3); }); }
 function View_FooterComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "col-sm-12 col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""])), (_l()(), i1.ɵeld(3, 0, null, null, 2, "ul", [["class", "list-unstyled"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_3)), i1.ɵdid(5, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var currVal_1 = _v.context.$implicit.categoryItems; _ck(_v, 5, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.categoryTitle; _ck(_v, 2, 0, currVal_0); }); }
-function View_FooterComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i3.NgStyle, [i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { ngStyle: [0, "ngStyle"] }, null), i1.ɵpod(2, { "background-image": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 4, "div", [["class", "footer-overlay pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_2)), i1.ɵdid(7, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _ck(_v, 2, 0, (("url(" + _co.menu.background) + ")")); _ck(_v, 1, 0, currVal_0); var currVal_1 = _co.menu.categories; _ck(_v, 7, 0, currVal_1); }, null); }
+function View_FooterComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i3.NgStyle, [i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { ngStyle: [0, "ngStyle"] }, null), i1.ɵpod(2, { "background-image": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 4, "div", [["class", "footer-overlay pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [["class", "container pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_2)), i1.ɵdid(7, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _ck(_v, 2, 0, (("url(" + _co.menu.background) + ")")); _ck(_v, 1, 0, currVal_0); var currVal_1 = _co.menu.categories; _ck(_v, 7, 0, currVal_1); }, null); }
 function View_FooterComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_1)), i1.ɵdid(1, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 15, "div", [["class", "container-fluid bg-primary"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 14, "div", [["class", "pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 13, "div", [["class", "col text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 10, "p", [["class", "text-light mt-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 3, "a", [["class", "text-light"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 7).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
@@ -1051,7 +1051,7 @@ exports.FooterComponentNgFactory = FooterComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".footer-overlay[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.8); }\n\n.container-fluid[_ngcontent-%COMP%] {\n  padding-left: 0;\n  padding-right: 0; }\n\nh2[_ngcontent-%COMP%] {\n  margin-top: 2rem; }\n\nli[_ngcontent-%COMP%] {\n  margin-top: 1rem; }"];
+var styles = [".footer-overlay[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.6); }\n\n.container-fluid[_ngcontent-%COMP%] {\n  padding-left: 0;\n  padding-right: 0; }\n\nh2[_ngcontent-%COMP%] {\n  margin-top: 2rem; }\n\nli[_ngcontent-%COMP%] {\n  margin-top: 1rem; }"];
 exports.styles = styles;
 
 
@@ -1153,7 +1153,7 @@ exports.MenuComponentNgFactory = MenuComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".modal[_ngcontent-%COMP%] {\n  display: block; }\n\n.modal-body[_ngcontent-%COMP%] {\n  height: 100vh;\n  position: relative;\n  background-size: cover;\n  padding: 0;\n  border: none; }\n\n.close[_ngcontent-%COMP%] {\n  padding-top: 1rem;\n  padding-right: 2rem;\n  font-size: 3rem; }\n\n.overlay[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.8);\n  height: 100%;\n  width: 100%;\n  position: relative;\n  border: none; }\n\n.container[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1;\n  border: none; }\n\nli[_ngcontent-%COMP%] {\n  margin-top: 1rem; }"];
+var styles = [".modal[_ngcontent-%COMP%] {\n  display: block; }\n\n.modal-body[_ngcontent-%COMP%] {\n  height: 100vh;\n  position: relative;\n  background-size: cover;\n  padding: 0;\n  border: none; }\n\n.close[_ngcontent-%COMP%] {\n  padding-top: 1rem;\n  padding-right: 2rem;\n  font-size: 3rem; }\n\n.overlay[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.6);\n  height: 100%;\n  width: 100%;\n  position: relative;\n  border: none; }\n\n.container[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1;\n  border: none; }\n\nli[_ngcontent-%COMP%] {\n  margin-top: 1rem; }"];
 exports.styles = styles;
 
 
@@ -1612,7 +1612,7 @@ var ContentService = /** @class */ (function () {
     };
     ContentService.prototype.getMenu = function () {
         return {
-            background: './assets/images/bg.jpg',
+            background: './assets/images/image1.jpg',
             categories: [
                 {
                     categoryTitle: 'Föreningen',
@@ -1666,7 +1666,7 @@ var ContentService = /** @class */ (function () {
                 hero: {
                     top: '404',
                     header: 'Sidan hittades inte',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image1.jpg',
                     version: 'light',
                     size: 'full',
                     linkOne: {
@@ -1682,7 +1682,7 @@ var ContentService = /** @class */ (function () {
                 hero: {
                     top: 'Välkommen till',
                     header: 'Östra Lindås Samfällighet',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image1.jpg',
                     version: 'light',
                     size: 'large',
                     linkOne: {
@@ -1703,7 +1703,7 @@ var ContentService = /** @class */ (function () {
                     top: 'Kontaktinformation',
                     header: 'Styrelsen och Föreningsfakta',
                     p: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image12.jpg',
                     version: 'light',
                     size: 'medium',
                 }
@@ -1713,7 +1713,7 @@ var ContentService = /** @class */ (function () {
                 hero: {
                     header: 'Regler',
                     p: 'Här hittar du information om samfällighetens relger',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image3.jpg',
                     version: 'light',
                     size: 'medium',
                 }
@@ -1723,7 +1723,7 @@ var ContentService = /** @class */ (function () {
                 hero: {
                     header: 'Stadgar',
                     p: 'Här hittar du information om samfällighetens stadgar',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image10.jpg',
                     version: 'light',
                     size: 'medium',
                 }
@@ -1733,7 +1733,7 @@ var ContentService = /** @class */ (function () {
                 hero: {
                     header: 'Städdagar & Grönområden',
                     p: 'Här hittar du information föreingens städdagar och grönområdet samt klippkartor',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image8.jpg',
                     version: 'light',
                     size: 'medium',
                 }
@@ -1743,7 +1743,7 @@ var ContentService = /** @class */ (function () {
                 hero: {
                     header: 'Vägar, parkering och garage',
                     p: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image7.jpg',
                     version: 'light',
                     size: 'medium',
                 }
@@ -1753,7 +1753,7 @@ var ContentService = /** @class */ (function () {
                 hero: {
                     header: 'TV och Fiber',
                     p: 'Här hittar du information om TV-utbudet samt fiber',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image11.jpg',
                     version: 'light',
                     size: 'medium',
                 }
@@ -1764,7 +1764,7 @@ var ContentService = /** @class */ (function () {
                     top: 'Arkiv',
                     header: 'Dokument och ritningar',
                     p: 'Här hittar du dokument, ritningar informationsbrev, med mera',
-                    image: './assets/images/bg.jpg',
+                    image: './assets/images/image13.jpg',
                     version: 'light',
                     size: 'medium',
                 }
@@ -1865,19 +1865,19 @@ var ContentService = /** @class */ (function () {
                             top: 'Maj 2018',
                             header: 'Ny hemsida',
                             text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida som inte innehåller några personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
-                            image: './assets/images/bg.jpg'
+                            image: './assets/images/image1.jpg'
                         },
                         {
                             top: 'Maj 2018',
                             header: 'Årsmötesprotokoll',
                             text: 'Protokollet från årsmötet är nu distribuerat. Protokollet kan även tillhandahålls av styrelsen på begäran.',
-                            image: './assets/images/bg.jpg'
+                            image: './assets/images/image9.jpg'
                         },
                         {
                             top: '21-22 Oktober',
                             header: 'Höstens städdagar',
                             text: 'Höstens städdagar är planerade till 21-22 Oktober',
-                            image: './assets/images/bg.jpg'
+                            image: './assets/images/image8.jpg'
                         }
                     ]
                 }
@@ -1939,12 +1939,12 @@ var ContentService = /** @class */ (function () {
                 gallery: {
                     version: 'muted',
                     images: [
-                        { url: './assets/images/bg.jpg' },
-                        { url: './assets/images/bg.jpg' },
-                        { url: './assets/images/bg.jpg' },
-                        { url: './assets/images/bg.jpg' },
-                        { url: './assets/images/bg.jpg' },
-                        { url: './assets/images/bg.jpg' }
+                        { url: './assets/images/image2.jpg' },
+                        { url: './assets/images/image3.jpg' },
+                        { url: './assets/images/image5.jpg' },
+                        { url: './assets/images/image4.jpg' },
+                        { url: './assets/images/image6.jpg' },
+                        { url: './assets/images/image8.jpg' }
                     ]
                 }
             }
@@ -2050,7 +2050,7 @@ exports.LAZY_MODULE_MAP = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ksthen/Documents/Dev/lind/src/main.server.ts */"./src/main.server.ts");
+module.exports = __webpack_require__(/*! /Users/Kristoffer/Documents/Privat/Development/lind/src/main.server.ts */"./src/main.server.ts");
 
 
 /***/ }),

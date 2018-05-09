@@ -146,7 +146,7 @@ export class ContentService {
 
   getMenu(): Menu {
     return {
-      background: './assets/images/bg.jpg',
+      background: './assets/images/image1.jpg',
       categories: [
         {
           categoryTitle: 'Föreningen',
@@ -202,7 +202,7 @@ export class ContentService {
         hero: <Hero>{
           top: '404',
           header: 'Sidan hittades inte',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image1.jpg',
           version: 'light',
           size: 'full', 
           linkOne: {
@@ -218,7 +218,7 @@ export class ContentService {
         hero: {
           top: 'Välkommen till',
           header: 'Östra Lindås Samfällighet',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image1.jpg',
           version: 'light',
           size: 'large',  
           linkOne: {
@@ -239,7 +239,7 @@ export class ContentService {
           top: 'Kontaktinformation',
           header: 'Styrelsen och Föreningsfakta',
           p: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image12.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -249,7 +249,7 @@ export class ContentService {
         hero: {
           header: 'Regler',
           p: 'Här hittar du information om samfällighetens relger',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image3.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -259,7 +259,7 @@ export class ContentService {
         hero: {
           header: 'Stadgar',
           p: 'Här hittar du information om samfällighetens stadgar',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image10.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -269,7 +269,7 @@ export class ContentService {
         hero: {
           header: 'Städdagar & Grönområden',
           p: 'Här hittar du information föreingens städdagar och grönområdet samt klippkartor',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image8.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -279,7 +279,7 @@ export class ContentService {
         hero: {
           header: 'Vägar, parkering och garage',
           p: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image7.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -289,7 +289,7 @@ export class ContentService {
         hero: {
           header: 'TV och Fiber',
           p: 'Här hittar du information om TV-utbudet samt fiber',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image11.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -300,7 +300,7 @@ export class ContentService {
           top: 'Arkiv',
           header: 'Dokument och ritningar',
           p: 'Här hittar du dokument, ritningar informationsbrev, med mera',
-          image: './assets/images/bg.jpg',
+          image: './assets/images/image13.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -401,19 +401,19 @@ export class ContentService {
               top: 'Maj 2018',
               header: 'Ny hemsida',
               text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida som inte innehåller några personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
-              image: './assets/images/bg.jpg'
+              image: './assets/images/image1.jpg'
             },      
             {
               top: 'Maj 2018',
               header: 'Årsmötesprotokoll',
               text: 'Protokollet från årsmötet är nu distribuerat. Protokollet kan även tillhandahålls av styrelsen på begäran.',
-              image: './assets/images/bg.jpg'
+              image: './assets/images/image9.jpg'
             },
             {
               top: '21-22 Oktober',
               header: 'Höstens städdagar',
               text: 'Höstens städdagar är planerade till 21-22 Oktober',
-              image: './assets/images/bg.jpg'
+              image: './assets/images/image8.jpg'
             }
           ]
         }
@@ -475,12 +475,12 @@ export class ContentService {
         gallery: {
           version: 'muted',
           images: [
-            { url: './assets/images/bg.jpg' },
-            { url: './assets/images/bg.jpg' },
-            { url: './assets/images/bg.jpg' },
-            { url: './assets/images/bg.jpg' },
-            { url: './assets/images/bg.jpg' },
-            { url: './assets/images/bg.jpg' }
+            { url: './assets/images/image2.jpg' },
+            { url: './assets/images/image3.jpg' },
+            { url: './assets/images/image5.jpg' },
+            { url: './assets/images/image4.jpg' },
+            { url: './assets/images/image6.jpg' },
+            { url: './assets/images/image8.jpg' }
           ]
         }
       }        
