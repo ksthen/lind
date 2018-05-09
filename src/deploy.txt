@@ -1,0 +1,17 @@
+// Prerender the app
+npm run build:prerender
+
+//Add all files
+git add *
+
+//Check files are added
+git status
+
+//Commit
+git commit -m 'deploy'
+
+//Push to master
+git push origin master
+
+//Push to ftp
+git ftp push
