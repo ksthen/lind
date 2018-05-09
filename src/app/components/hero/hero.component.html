@@ -1,0 +1,55 @@
+<section class="jumbotron jumbotron-fluid text-center"
+*ngIf="hero"
+[@heroAnimation]="true"
+[ngStyle]="{'background-image': 'url(' + hero.image + ')'}"
+[ngClass]="hero.size || 'full'">
+        <div class="overlay-dark" [ngClass]="{'overlay-light': hero.version === 'light'}">
+                <div class="container">
+                <h4 class="jumbotron-heading top" *ngIf="hero.top">{{ hero.top }}</h4>
+                <h1 class="jumbotron-heading heading" *ngIf="hero.header">{{ hero.header }}</h1>
+                <p class="lead paragraph" *ngIf="hero.p">{{ hero.p }}</p>
+                <p>
+                        <ng-container *ngIf="hero.linkOne">
+                        <a *ngIf="hero.linkOne.type === 'external'" 
+                        [href]="hero.linkOne.href" 
+                        target="_blank"
+                        class="btn btn-outline-light mr-2 mt-3">
+                                {{ hero.linkOne.text }}
+                        </a>
+                        <a *ngIf="hero.linkOne.type === 'internal'" 
+                        [routerLink]="hero.linkOne.href" 
+                                class="btn btn-outline-light mr-2  mt-3">
+                                {{ hero.linkOne.text }}
+                        </a>
+                        <a *ngIf="hero.linkOne.type === 'anchor'" 
+                        (click)="scrollTo(hero.linkOne.href)" 
+                        class="btn btn-outline-light mr-2 mt-3">
+                                {{ hero.linkOne.text }}
+                        </a>    
+                        </ng-container>
+                        <ng-container *ngIf="hero.linkTwo" class="linkTwo">
+                                <a *ngIf="hero.linkTwo.type === 'external'" 
+                                [href]="hero.linkTwo.href" 
+                                target="_blank"
+                                class="btn btn-outline-light ml-2 mt-3">
+                                        {{ hero.linkTwo.text }}
+                                </a>
+                                <a *ngIf="hero.linkTwo.type === 'internal'" 
+                                [routerLink]="hero.linkTwo.href" 
+                                class="btn btn-outline-light ml-2 mt-3">
+                                        {{ hero.linkTwo.text }}
+                                </a>
+                                <a *ngIf="hero.linkTwo.type === 'anchor'" 
+                                (click)="scrollTo(hero.linkTwo.href)" 
+                                class="btn btn-outline-light ml-2 mt-3">
+                                        {{ hero.linkTwo.text }}
+                                </a> 
+                        </ng-container>
+                </p>
+                </div>
+                <div class="scroll-container rounded-circle" (click)="scrollTo('#down')" *ngIf="!hero.disableScrollDown">
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ratio="1"> <polygon points="10.5,16.08 5.63,10.66 6.37,10 10.5,14.58 14.63,10 15.37,10.66"></polygon> <line fill="none" stroke="#000" x1="10.5" y1="4" x2="10.5" y2="15"></line></svg>
+                </div>
+        </div>
+</section>
+<div id="down"></div>

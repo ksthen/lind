@@ -1,0 +1,30 @@
+<main role="main">
+  <div *ngFor="let h of page.modules">
+      <app-hero
+        *ngIf="h.type === 'hero' && h.hero"
+        [hero]="h.hero">
+    </app-hero>
+  </div>
+  <ng-container *ngFor="let m of page.modules">
+      <app-news
+        *ngIf="m.type === 'news' && m.news"
+        [news]="m.news">
+      </app-news>
+      <app-article
+        *ngIf="m.type === 'article' && m.article"
+        [article]="m.article">
+      </app-article>
+      <app-file-list
+        *ngIf="m.type === 'files' && m.files"
+        [files]="m.files">
+      </app-file-list>
+      <app-gallery
+        *ngIf="m.type === 'gallery' && m.gallery"
+        [gallery]="m.gallery">
+      </app-gallery>
+      <app-contact-table
+        *ngIf="m.type === 'contactTable' && m.contactTable"
+        [contactTable]="m.contactTable">
+      </app-contact-table>      
+    </ng-container>
+</main>

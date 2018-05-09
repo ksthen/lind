@@ -1,0 +1,35 @@
+{{ showMenu | async | json}}
+<div 
+  *ngIf="menu"
+  [ngStyle]="{'background-image': 'url(' + menu.background + ')'}">
+  <div class="modal-body">
+    <div class="overlay">
+      <button 
+        type="button" 
+        class="btn close" 
+        aria-label="Close" 
+        (click)="activeModal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center"  [@slideIn]>
+            <ng-container *ngFor="let category of menu.categories">
+                <h3 class="slide-in-bottom mt-5">{{ category.categoryTitle }}</h3>
+                <ul class="list-unstyled">
+                  <li *ngFor="let i of category.categoryItems"
+                    class="slide-in-bottom">
+                      <a [routerLink]="'/' + [i.link]" 
+                        (click)="closeModal()" 
+                        class="text-dark">
+                          {{ i.title }}
+                      </a>
+                  </li>
+                </ul>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>

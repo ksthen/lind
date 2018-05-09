@@ -1,0 +1,22 @@
+<div class="container pt-4 pb-4" *ngIf="displayNews" [@fadeAnimation]="displayNews.length">
+    <div class="row">
+      <div class="col">
+        <h2>{{ news.header }}</h2>
+      </div>
+    </div>
+    <div class="row align-items-center " *ngFor="let n of displayNews">
+        <div class="col-sm-12 col-md-4 pt-3 pb-3 fade-in">
+          <img class="img-fluid"  [src]="n.image"/>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <h4>{{ n.top }}</h4>
+          <h3>{{ n.heading }}</h3>
+          <p>{{ n.text }}</p>
+        </div>
+    </div>
+    <div class="row mb-5" *ngIf="displayNews === news.newsItems">
+        <div class="col-sm-12 text-center mt-4">
+            <button class="btn btn-primary" [ngClass]="{'disabled': displayNews === news.newsItems}" (click)="showAllNews()">Ladda fler</button>
+          </div>
+    </div>
+</div>

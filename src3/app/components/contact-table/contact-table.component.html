@@ -1,0 +1,24 @@
+<div class="container pt-4 pb-4" *ngIf="contactTable">
+  <div class="row">
+    <div class="col col-sm-12 pt-4 pb-4">
+        <h2>{{ contactTable.header }}</h2>
+    </div>
+  </div>
+  <div class="row" *ngFor="let c of contactTable.contacts">
+    <div class="col-sm-6 col-md-3">
+      <strong>{{ c.function }}</strong>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        {{ c.name }}
+    </div> 
+    <div class="col-sm-6 col-md-3">
+        {{ c.address }}
+    </div> 
+    <div class="col-sm-6 col-md-3">
+        {{ c.phone }}
+    </div>   
+    <div class="col-sm-12">
+      <hr>
+    </div>         
+  </div>
+</div>

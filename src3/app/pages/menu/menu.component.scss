@@ -1,0 +1,38 @@
+
+
+.modal-body {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    padding: 0;
+    border: none;
+}
+
+.close {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    font-size: 3rem;
+}
+
+.overlay {
+    background-color: rgba(255,255,255,0.8);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: none;
+}
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: none;
+}
+
+li {
+    margin-top: 1rem;
+}
+
