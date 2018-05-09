@@ -5,10 +5,7 @@ import { isPlatformBrowser } from '@angular/common';
 @Component({
   selector: 'app-root',
   template: `
-  <app-top-bar></app-top-bar>
   <router-outlet id="top"></router-outlet>
-  <app-footer></app-footer>
-  <app-menu></app-menu>
   `,
   styles: []
 })

@@ -17,7 +17,7 @@
                                 {{ hero.linkOne.text }}
                         </a>
                         <a *ngIf="hero.linkOne.type === 'internal'" 
-                        [routerLink]="hero.linkOne.href" 
+                        [routerLink]="['/' + hero.linkOne.href]" 
                                 class="btn btn-outline-light mr-2  mt-3">
                                 {{ hero.linkOne.text }}
                         </a>

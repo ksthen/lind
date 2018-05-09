@@ -18,7 +18,6 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactTableComponent } from './components/contact-table/contact-table.component';
-import { MenuService } from './services/menu.service';
 
 @NgModule({
   declarations: [
@@ -50,6 +49,7 @@ import { MenuService } from './services/menu.service';
       { path: 'privacy', component: StartComponent},
       { path: 'cookies', component: StartComponent},
       { path: 'test', component: StartComponent},
+      { path: 'meny', component: MenuComponent},
       { path: '**', component: NotFoundComponent }
     ]),
     MarkdownModule.forRoot(),
@@ -59,7 +59,7 @@ import { MenuService } from './services/menu.service';
   entryComponents: [
     MenuComponent
   ],
-  providers: [ContentService, MenuService],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

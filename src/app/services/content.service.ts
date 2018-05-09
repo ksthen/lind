@@ -51,12 +51,14 @@ export class ContentService {
         ]
       },
       styrelsen: {
-        title: 'Styrelsen',
-        description: 'Här hittar du kontaktuppgifter till styrelsen i Östra Lindås Samfällighet',
+        title: 'Styrelsen och föreningsfakta',
+        description: 'Här hittar du kontaktuppgifter till styrelsen samt områdesansvariga i Östra Lindås Samfällighet',
         modules: [
           this.getModule('styrelsenHero'),
-          this.getModule('styrelsenContactTable')
-        ]
+          this.getModule('styrelsenContactTable'),
+          this.getModule('omradesansvarigTable'),
+          this.getArticle('faktaArticle')
+        ]   
       },
       regler: {
         title: 'Regler',
@@ -79,7 +81,9 @@ export class ContentService {
         description: 'Här hittar du information föreingens städdagar och grönområdet samt klippkartor',
         modules: [
           this.getModule('stadDagarHero'),
-          this.getArticle('stadDagarArticle')
+          this.getArticle('stadDagarOneArticle'),
+          this.getModule('omradesansvarigTable'),
+          this.getArticle('stadDagarTwoArticle'),
         ]
       },
       parkeringgarage: {
@@ -152,7 +156,7 @@ export class ContentService {
               link: 'start'
             },
             {
-              title: 'Styrelsen',
+              title: 'Styrelsen / Föreningsfakta',
               link: 'styrelsen'
             },
             {
@@ -216,15 +220,25 @@ export class ContentService {
           header: 'Östra Lindås Samfällighet',
           image: './assets/images/bg.jpg',
           version: 'light',
-          size: 'large',           
+          size: 'large',  
+          linkOne: {
+            text: 'Meny',
+            href: 'meny',
+            type: 'internal'
+          },  
+          linkTwo: {
+            text: 'Nyheter',
+            href: '#down',
+            type: 'anchor'
+          },                 
         }
       },
       styrelsenHero: {
         type: 'hero',
         hero: {
           top: 'Kontaktinformation',
-          header: 'Styrelsen',
-          p: 'Här hittar du kontaktuppgifter till styrelsen',
+          header: 'Styrelsen och Föreningsfakta',
+          p: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
           image: './assets/images/bg.jpg',
           version: 'light',
           size: 'medium',           
@@ -335,10 +349,53 @@ export class ContentService {
           ]
         }
       },  
+      omradesansvarigTable: {
+        type: 'contactTable',
+        contactTable: {
+          header: 'Områdesansvariga',
+          contacts: [
+            {
+              function: 'Område 1',
+              name: '	Jonas Jävert',
+              address: 'Lindåsvägen 22',
+            },
+            {
+              function: 'Område 2',
+              name: 'Lena Larsson / Linda Vendelstrand Gardelin',
+              address: 'LV 50 / LV60  '
+            },
+            {
+              function: 'Område 3',
+              name: 'Björn Töpel',
+              address: 'Lindåsvägen 116'
+            },
+            {
+              function: 'Område 4',
+              name: 'Lars Hägnemo',
+              address: 'Billdals Aspväg 140',
+            },
+            {
+              function: 'Område 5',
+              name: 'Lars Björklund',
+              address: 'Billdals Aspväg 86'
+            },
+            {
+              function: 'Område 6',
+              name: 'Gabriella Barta Söderqvist',
+              address: 'Billdals Aspväg 70'
+            },
+            {
+              function: 'Område 7',
+              name: 'Christian Conradi',
+              address: 'Billdals Aspväg 7'
+            }
+          ]
+        }
+      },  
       startNews: {
         type: 'news',
         news: {
-          header: 'Aktuellt',
+          header: 'Nyheter',
           newsItems: [
             {
               top: 'Maj 2018',
@@ -540,6 +597,32 @@ export class ContentService {
           `
         }
       },
+      faktaArticle:  {
+        type: 'article',
+        article: {
+          text: `
+          ## Föreningsfakta
+
+          **Föreningsnamn**       
+          Anläggningssamfälligheten Östra Lindås 
+
+          **Fastighetsbeteckning**  
+          Lindås GA:10 
+
+          **Organisationsnummer**	  
+          717904-7787 
+          
+          **Adress**	              
+          Billdals Aspväg 70, 427 39 BILLDAL 
+          
+          **Hemsida**	              
+          http://www.ostralindas.se 
+          
+          **Kontakt**	              
+          styrelsen@ostralindas.se 
+          `
+        }
+      },
       stadgarArticle: {
         type: 'article',
         article: {
@@ -623,69 +706,112 @@ export class ContentService {
           `
           }
       },
+
+      stadDagarOneArticle: {
+        type: 'article',
+        article: {
+          text:
+          `
+          ## Städdagar
+          Städdagar hålls normalt två gånger per år, vår och höst. Det är mycket viktigt att alla som orkar ställer upp, då ansvaret att hålla området i ordning vilar på alla. Risken är annars att årsavgiften måste höjas för att bekosta städning, rabatt- och buskvård etc. Enligt årsmötes beslut 2017 debiteras inte 2000:- per fastighet vid aktivt deltagande lördag och söndag på våra två städhelger eller annan dag enligt överenskommelse. Om man ej kan deltaga på städdag och vill slippa kostnaden skall man meddela någon i styrelsen eller områdesansvariga, sk städledare, för att få en uppgift som kan utföras på annan dag än städdag.
+          
+          Områdesansvarig ansvarar för följande:
+
+          Översyn av området innan städdagar
+
+          * Fördelning av arbetsuppgifter under städdagar
+
+          *  Allmän kontroll av "sitt" område Information till nyinflyttade (denna skrivelse), matrikel samt kallelse och protokoll från senaste årsmötet. Materialet kan erhållas från styrelsens sekreterare.
+
+          * Innan varje städdag (ca 2-3 veckor innan) samlas samtliga områdesansvariga för genomgång för att se vad som måste inhandlas till städdagen. Styrelsen sammankallar.
+
+          Följande material skall finnas utanför förrådet vid Billdals Aspväg 122:
+
+          | Antal | Object |
+          | ----- | ------ |
+          | 1 st | Skopa för rensning av brunnar |
+          | 3 st | Skottkärror |
+          | 1 st | Stege, tvådelad |
+          | 1 st | Snösläde |
+
+          Om något går sönder ansvarar Du för att enheten repareras. Kostnaderna regleras av samfällighetens kassör om inte vårdslöshet kan påvisas.
+
+          `
+        }
+      },
         
-      stadDagarArticle: {
+      stadDagarTwoArticle: {
         type: 'article',
         article: {
           text: 
             `
-            ## Städdagar
-            Städdagar hålls normalt två gånger per år, vår och höst. Det är mycket viktigt att alla som orkar ställer upp, då ansvaret att hålla området i ordning vilar på alla. Risken är annars att årsavgiften måste höjas för att bekosta städning, rabatt- och buskvård etc. Enligt årsmötes beslut 2017 debiteras inte 2000:- per fastighet vid aktivt deltagande lördag och söndag på våra två städhelger eller annan dag enligt överenskommelse. Om man ej kan deltaga på städdag och vill slippa kostnaden skall man meddela någon i styrelsen eller områdesansvariga, sk städledare, för att få en uppgift som kan utföras på annan dag än städdag.
+            ## Att göra på städdagarna
 
-            ### Buskar
+            **Buskar**
+
             Kontrollera och åtgärda förväxta planteringar vid lekplatser, garage m.m.
         
-            ### Staket
+            ** Staket **
+
             Byt ut skadade brädor för staket vid lekplatser, garagelängor eller bygator. Måla om vid behov.
         
-            ### Lekplatser
+            ** Lekplatser**
+
             Reparation eller utbyte av skadade leksaker. Materialbehov anmäles till styrelsen.
         
-            ### Garage
+            ** Garage**
+
             Översyn och eventuell målning Kontrollera stuprör. Kontrollera att alla garage går att låsa. Smörjning av portmekanism.
         
-            ### Parkeringsplatser
+            ** Parkeringsplatser**
+
             Kontroll och eventuell förbättring av linjemålning.
         
-            ### Områdesvägar
+            ** Områdesvägar**
+
             Rapportering till styrelsen gällande skador i asfalt typ bubblor, hålor eller liknade.
         
-            ### Belysning
+            ** Belysning**
+
             Kontroll av lampor och att eldosor ej är öppnade.
         
-            ### Brandposter
+            ** Brandposter**
+
             Kontrollera att posterna är i gott skick och åtkomliga för brandkåren. Skall finnas ex på varje lekplats. Kontrollera även att pekskylten som pekar mot brandposten pekar åt rätt håll.
         
-            ### Brunnslock
+            ** Brunnslock**
             Kontroll av att lock ej saknas samt att locken ej är lätta för barn att flytta. Lock av så kallad kupad modell skall vara låsta.
         
-            ### Grus
+            ** Grus**
+
             Allt grus/flis från vinterns väghållning skall sopas bort och läggas i gruslådor.
         
-            ### Datum
+            ** Datum**
+
             Aktuellt datum för städdagar hittar du i protokollet från Årsmötet
             
-            ## Grönområden
+            ** Grönområden**
+
             Samfälligheten äger gemensamt mark och på den stående träd/skog. För att hålla efter denna har vi from 2006 anlitat entreprenör samt börjat avsätta medel i skogsvårdsfond. Följande policy har tagits fram för att vägleda föreningens medlemmar.
             
             * All fällning skall godkännas skriftligen av styrelsen och berörda grannar.
             * Samfälligheten bekostar fällning och bortforsling av träd om fara för person eller egendom föreligger. Vid behov inkallas besiktningsman.
             * Fällning av andra orsaker skall alltid godkännas av styrelsen och bekostas av fastighetsägaren (även bortforsling av virke).
             
-            ### Gräsklippning
+            ## Gräsklippning
             * Gräsklippning enl. kartor inkl. puts 20-22 ggr/ säsong 1 maj - 1 oktober.
             * Slagning görs 1-2 ggr /år vid norra parkeringen Billdals Aspväg, pulkabacken, vid grind mot skolan samt gångtunneln under Lövskogsvägen på begäran.
             * Entrepenör: Lindome Entreprenad AB
             
-            ## Klippkarta norr
+            #### Klippkarta norr
         
             ![Norr](./assets/images/klipp-norr.png)
         
-            ## Klippkarta mitt
+            #### Klippkarta mitt
         
             ![Mitt](./assets/images/klipp-mitt.png)
         
-            ## Klippkarta söder
+            #### Klippkarta söder
         
             ![Söder](./assets/images/klipp-soder.png)
           `

@@ -1,5 +1,4 @@
-<div class="modal" *ngIf="(showMenu | async)">
-
+<div class="modal">
     <div 
       *ngIf="menu"
       [ngStyle]="{'background-image': 'url(' + menu.background + ')'}">
@@ -20,8 +19,7 @@
                     <ul class="list-unstyled">
                       <li *ngFor="let i of category.categoryItems"
                         class="slide-in-bottom">
-                          <a [routerLink]="'/' + [i.link]" 
-                            (click)="closeModal()" 
+                          <a [routerLink]="'/' + [i.link]"  
                             class="text-dark">
                               {{ i.title }}
                           </a>

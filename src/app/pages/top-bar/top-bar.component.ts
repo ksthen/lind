@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuComponent } from '../menu/menu.component';
-import { MenuService } from '../../services/menu.service';
 
 @Component({
   selector: 'app-top-bar',
@@ -9,14 +8,9 @@ import { MenuService } from '../../services/menu.service';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor(private menuService: MenuService
-  ) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  openMenu() {
-    this.menuService.openMenu();
   }
 
 }

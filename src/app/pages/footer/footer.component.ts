@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject, PLATFORM_ID } from '@angular/core';
 import { ContentService } from '../../services/content.service';
+import { isPlatformBrowser } from '@angular/common';
 
 export interface Menu {
   background: string;
@@ -25,10 +26,19 @@ export class FooterComponent implements OnInit {
 
   public menu: Menu;
 
-  constructor(private cs: ContentService) { }
+
+  constructor(@Inject(PLATFORM_ID) private platformId: any, private cs: ContentService) { }
 
   ngOnInit() {
     this.menu = this.cs.getMenu();
   }
 
+  scrollTo() {
+    if (isPlatformBrowser(this.platformId)) {
+      const id = document.querySelector('#down');
+      if (id){
+          id.scrollIntoView({ block: 'start', behavior: 'smooth'});
+      }
+    }
+  }
 }

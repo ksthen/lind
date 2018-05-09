@@ -1,5 +1,5 @@
-<div 
-  class="container-fluid" 
+<div
+  class="container-fluid"
   *ngIf="menu"
   [ngStyle]="{'background-image': 'url(' + menu.background + ')'}">
   <div class="footer-overlay pt-5 pb-5">
@@ -9,7 +9,7 @@
             <h3>{{ c.categoryTitle }}</h3>
             <ul class="list-unstyled">
                 <li *ngFor="let i of c.categoryItems">
-                    <a [routerLink]="'/' + [i.link]" class="text-dark">{{ i.title}}</a>
+                    <a [routerLink]="'/' + [i.link]" class="text-dark" (click)="scrollTo()">{{ i.title}}</a>
                 </li>
             </ul>
         </div>
