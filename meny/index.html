@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>NgUniversalDemo</title>
+  <base href="/lind/">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    if (window.document.documentMode) {
+      // polyfill IE11 in a blocking way
+      var s = document.createElement('script');
+      s.src = 'assets/ie-polyfills.min.js';
+      document.head.appendChild(s);
+    } else if (!Object.assign) {
+      // polyfill other non-evergreen browsers in a blocking way
+      var polyfillUrl = "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.find&flags=gated&unknown=polyfill";
+      // send a blocking XHR to fetch the polyfill
+      // then append it to the document so that its eval-ed synchronously
+      // this is required because the method used for IE is not reliable with other non-evergreen browsers
+      var xhr = new XMLHttpRequest();
+      xhr.addEventListener("load", function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        var code = this.responseText;
+        s.appendChild(document.createTextNode(code));
+        document.head.appendChild(s);
+      });
+      xhr.open("GET", polyfillUrl, false);
+      xhr.send();
+    }
+  </script>
+<link rel="stylesheet" href="styles.8d66b390f9d91c2e2893.css"><style ng-transition="my-app">.modal[_ngcontent-c10] {
+  display: block; }
+
+.modal-body[_ngcontent-c10] {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  padding: 0;
+  border: none; }
+
+.close[_ngcontent-c10] {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  font-size: 3rem; }
+
+.overlay[_ngcontent-c10] {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: none; }
+
+.container[_ngcontent-c10] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  border: none; }
+
+li[_ngcontent-c10] {
+  margin-top: 1rem; }</style></head>
+<body>
+  <app-root ng-version="6.0.0"><router-outlet id="top"></router-outlet><app-menu _nghost-c10="" class="ng-tns-c10-0 ng-star-inserted"><div _ngcontent-c10="" class="modal"><!----><div _ngcontent-c10="" class="ng-tns-c10-0 ng-star-inserted" style="background-image:url(./assets/images/image1.jpg);"><div _ngcontent-c10="" class="modal-body"><div _ngcontent-c10="" class="overlay"><button _ngcontent-c10="" class="btn close" aria-label="Close" type="button"><span _ngcontent-c10="" class="ng-tns-c10-0" aria-hidden="true">×</span></button><div _ngcontent-c10="" class="container"><div _ngcontent-c10="" class="row"><div _ngcontent-c10="" class="col text-center ng-trigger ng-trigger-slideIn"><!----><!----><h3 _ngcontent-c10="" class="slide-in-bottom mt-5 ng-tns-c10-0 ng-star-inserted" style="">Föreningen</h3><ul _ngcontent-c10="" class="list-unstyled ng-tns-c10-0 ng-star-inserted" style=""><!----><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/start"> Nyheter / Om föreningen </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/styrelsen"> Styrelsen / Föreningsfakta </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/regler"> Regler </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/stadgar"> Stadgar </a></li></ul><!----><h3 _ngcontent-c10="" class="slide-in-bottom mt-5 ng-tns-c10-0 ng-star-inserted" style="">Samfälligheten</h3><ul _ngcontent-c10="" class="list-unstyled ng-tns-c10-0 ng-star-inserted" style=""><!----><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/staddagar"> Städdagar / Grönområden </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/parkeringgarage"> Parkering, Garage / Vägar </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/tvfiber"> TV / Fiber </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/dokument"> Dokument </a></li></ul></div></div></div></div></div></div></div></app-menu></app-root>
+
+
+<script type="text/javascript" src="runtime.6afe30102d8fe7337431.js"></script><script type="text/javascript" src="polyfills.4d43ed2fd4a773d022f6.js"></script><script type="text/javascript" src="main.75d76285546cf39e2de6.js"></script><script id="my-app-state" type="application/json">{}</script></body></html>
