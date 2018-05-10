@@ -7,6 +7,7 @@ export interface Hero {
   top?: string;
   header?: string;
   p?: string;
+  ptemp?: string;
   linkOne?: Link;
   linkTwo?: Link;
   version?: string; // light

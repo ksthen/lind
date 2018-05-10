@@ -717,7 +717,7 @@ var i3 = __webpack_require__(/*! ./gallery.component */ "./src/app/components/ga
 var styles_GalleryComponent = [i0.styles];
 var RenderType_GalleryComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_GalleryComponent, data: {} });
 exports.RenderType_GalleryComponent = RenderType_GalleryComponent;
-function View_GalleryComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "div", [["class", "col-sm-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["class", "img-fluid"]], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.url; _ck(_v, 1, 0, currVal_0); }); }
+function View_GalleryComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "div", [["class", "col-6 col-sm-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["class", "img-fluid"]], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.url; _ck(_v, 1, 0, currVal_0); }); }
 function View_GalleryComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "bg-secondary": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 2, "div", [["class", "row no-gutters pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_2)), i1.ɵdid(5, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "container-fluid"; var currVal_1 = _ck(_v, 2, 0, (_co.gallery.version === "muted")); _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_2 = _co.gallery.images; _ck(_v, 5, 0, currVal_2); }, null); }
 function View_GalleryComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.gallery; _ck(_v, 1, 0, currVal_0); }, null); }
 exports.View_GalleryComponent_0 = View_GalleryComponent_0;
@@ -853,7 +853,7 @@ exports.HeroComponentNgFactory = HeroComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".jumbotron[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100%;\n  position: relative; }\n\n.jumbotron-fluid[_ngcontent-%COMP%] {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.small[_ngcontent-%COMP%] {\n  height: calc(60vh - 80px); }\n\n.medium[_ngcontent-%COMP%] {\n  height: calc(80vh - 80px); }\n\n.large[_ngcontent-%COMP%] {\n  height: calc(90vh - 80px); }\n\n.full[_ngcontent-%COMP%] {\n  height: calc(100vh - 80px); }\n\n.container[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1; }\n\n.scroll-container[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 5%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1;\n  background-color: rgba(255, 255, 255, 0.3);\n  width: 30px;\n  height: 30px;\n  padding: 5px;\n  overflow: hidden;\n  cursor: pointer;\n  fill: white;\n  color: white;\n  stroke: white; }\n\n.scroll-container[_ngcontent-%COMP%]   line[_ngcontent-%COMP%] {\n    stroke: white; }\n\n.overlay-light[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.5);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: black; }\n\n.overlay-dark[_ngcontent-%COMP%] {\n  background-color: rgba(0, 0, 0, 0.4);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: white; }\n\n.btn-outline-light[_ngcontent-%COMP%]:hover {\n  color: #212529 !important; }"];
+var styles = [".jumbotron[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100%;\n  position: relative; }\n\n.jumbotron-fluid[_ngcontent-%COMP%] {\n  padding-top: 0;\n  padding-bottom: 0; }\n\n.small[_ngcontent-%COMP%] {\n  height: calc(60vh - 80px); }\n\n.medium[_ngcontent-%COMP%] {\n  height: calc(80vh - 80px); }\n\n.large[_ngcontent-%COMP%] {\n  height: calc(90vh - 80px); }\n\n.full[_ngcontent-%COMP%] {\n  height: calc(100vh - 80px); }\n\n.container[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1; }\n\n.scroll-container[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 5%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  z-index: 1;\n  background-color: rgba(255, 255, 255, 0.3);\n  width: 30px;\n  height: 30px;\n  padding: 5px;\n  overflow: hidden;\n  cursor: pointer;\n  fill: white;\n  color: white;\n  stroke: white; }\n\n.scroll-container[_ngcontent-%COMP%]   line[_ngcontent-%COMP%] {\n    stroke: white; }\n\n.overlay-light[_ngcontent-%COMP%] {\n  background-color: rgba(255, 255, 255, 0.5);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: black; }\n\n.overlay-dark[_ngcontent-%COMP%] {\n  background-color: rgba(0, 0, 0, 0.1);\n  position: relative;\n  height: 100%;\n  width: 100%;\n  color: white; }\n\n.btn-outline-light[_ngcontent-%COMP%]:hover {\n  color: #212529 !important; }"];
 exports.styles = styles;
 
 
@@ -1456,7 +1456,7 @@ exports.TopBarComponentNgFactory = TopBarComponentNgFactory;
  * tslint:disable
  */ 
 Object.defineProperty(exports, "__esModule", { value: true });
-var styles = [".navbar-brand[_ngcontent-%COMP%] {\n  max-width: 70vw; }\n\nimg[_ngcontent-%COMP%] {\n  max-width: 100%;\n  max-height: 79px; }"];
+var styles = [".navbar-brand[_ngcontent-%COMP%] {\n  max-width: 70vw;\n  margin-right: 0; }\n\nimg[_ngcontent-%COMP%] {\n  max-width: 100%;\n  max-height: 75px; }"];
 exports.styles = styles;
 
 
@@ -1554,7 +1554,7 @@ var ContentService = /** @class */ (function () {
                 ]
             },
             parkeringgarage: {
-                title: 'Vägar, parkering och garage',
+                title: 'Parkering, Garage & Vägar',
                 description: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
                 modules: [
                     this.getModule('parkeringGarageHero'),
@@ -1701,8 +1701,8 @@ var ContentService = /** @class */ (function () {
                 type: 'hero',
                 hero: {
                     top: 'Kontaktinformation',
-                    header: 'Styrelsen och Föreningsfakta',
-                    p: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
+                    header: 'Styrelsen & Föreningsfakta',
+                    ptemp: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
                     image: './assets/images/image12.jpg',
                     version: 'light',
                     size: 'medium',
@@ -1711,8 +1711,8 @@ var ContentService = /** @class */ (function () {
             reglerHero: {
                 type: 'hero',
                 hero: {
-                    header: 'Regler',
-                    p: 'Här hittar du information om samfällighetens relger',
+                    header: 'Samfällighetens Regler',
+                    ptemp: 'Här hittar du information om samfällighetens relger',
                     image: './assets/images/image3.jpg',
                     version: 'light',
                     size: 'medium',
@@ -1721,8 +1721,8 @@ var ContentService = /** @class */ (function () {
             stadgarHero: {
                 type: 'hero',
                 hero: {
-                    header: 'Stadgar',
-                    p: 'Här hittar du information om samfällighetens stadgar',
+                    header: 'Samfällighetens Stadgar',
+                    ptemp: 'Här hittar du information om samfällighetens stadgar',
                     image: './assets/images/image10.jpg',
                     version: 'light',
                     size: 'medium',
@@ -1732,7 +1732,7 @@ var ContentService = /** @class */ (function () {
                 type: 'hero',
                 hero: {
                     header: 'Städdagar & Grönområden',
-                    p: 'Här hittar du information föreingens städdagar och grönområdet samt klippkartor',
+                    ptemp: 'Här hittar du information föreingens städdagar och grönområdet samt klippkartor',
                     image: './assets/images/image8.jpg',
                     version: 'light',
                     size: 'medium',
@@ -1741,8 +1741,8 @@ var ContentService = /** @class */ (function () {
             parkeringGarageHero: {
                 type: 'hero',
                 hero: {
-                    header: 'Vägar, parkering och garage',
-                    p: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
+                    header: 'Parkering, Garage & Vägar',
+                    ptemp: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
                     image: './assets/images/image7.jpg',
                     version: 'light',
                     size: 'medium',
@@ -1752,7 +1752,7 @@ var ContentService = /** @class */ (function () {
                 type: 'hero',
                 hero: {
                     header: 'TV och Fiber',
-                    p: 'Här hittar du information om TV-utbudet samt fiber',
+                    ptemp: 'Här hittar du information om TV-utbudet samt fiber',
                     image: './assets/images/image11.jpg',
                     version: 'light',
                     size: 'medium',
@@ -1762,8 +1762,8 @@ var ContentService = /** @class */ (function () {
                 type: 'hero',
                 hero: {
                     top: 'Arkiv',
-                    header: 'Dokument och ritningar',
-                    p: 'Här hittar du dokument, ritningar informationsbrev, med mera',
+                    header: 'Dokument & ritningar',
+                    ptemp: 'Här hittar du dokument, ritningar informationsbrev, med mera',
                     image: './assets/images/image13.jpg',
                     version: 'light',
                     size: 'medium',
@@ -1863,8 +1863,14 @@ var ContentService = /** @class */ (function () {
                     newsItems: [
                         {
                             top: 'Maj 2018',
+                            header: 'Ny "Vippy"',
+                            text: 'Ny "vippy" gungbräda är på plats!',
+                            image: './assets/images/image16.jpg'
+                        },
+                        {
+                            top: 'Maj 2018',
                             header: 'Ny hemsida',
-                            text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida som inte innehåller några personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
+                            text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida med ett minimum personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
                             image: './assets/images/image1.jpg'
                         },
                         {
@@ -1890,17 +1896,14 @@ var ContentService = /** @class */ (function () {
                         {
                             header: 'Anläggningsbeslut',
                             text: 'Anläggningsbeslut för samfälligheten',
-                            url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
                         },
                         {
                             header: 'Fiber AV',
                             text: 'Ritning över fibernät Billdals Aspväg',
-                            url: 'https://ostralindas.se/arkiv/protokoll?DocId=3691'
                         },
                         {
                             header: 'Fiber LV',
                             text: 'Ritning över fibernät Lindåsvägen',
-                            url: 'http://ostralindas.se/arkiv/protokoll?DocId=3692'
                         },
                     ]
                 }
@@ -1912,24 +1915,18 @@ var ContentService = /** @class */ (function () {
                     files: [
                         {
                             header: 'Välkomstbrev',
-                            text: 'Välkomstbrev till nya medlemmar',
-                            url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
                         },
                         {
                             header: 'Julbrev 2017',
-                            url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
                         },
                         {
                             header: 'Sommarbrev 2017',
-                            url: 'https://ostralindas.se/arkiv/protokoll?DocId=3691'
                         },
                         {
                             header: 'Julbrev 2016',
-                            url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
                         },
                         {
                             header: 'Sommarbrev 2016',
-                            url: 'https://ostralindas.se/arkiv/protokoll?DocId=3691'
                         },
                     ]
                 }
@@ -1939,12 +1936,12 @@ var ContentService = /** @class */ (function () {
                 gallery: {
                     version: 'muted',
                     images: [
-                        { url: './assets/images/image2.jpg' },
+                        { url: './assets/images/image15.jpg' },
                         { url: './assets/images/image3.jpg' },
                         { url: './assets/images/image5.jpg' },
                         { url: './assets/images/image4.jpg' },
-                        { url: './assets/images/image6.jpg' },
-                        { url: './assets/images/image8.jpg' }
+                        { url: './assets/images/image9.jpg' },
+                        { url: './assets/images/image14.jpg' },
                     ]
                 }
             }

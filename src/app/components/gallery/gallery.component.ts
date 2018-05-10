@@ -1,7 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+export interface GalleryImage {
+  url: string;
+  alt?: string;
+}
+
 export interface Gallery {
-  images: Array<string>;
+  images: Array<GalleryImage>;
   version?: string; // muted
 };
 

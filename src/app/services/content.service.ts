@@ -4,6 +4,7 @@ import { News } from '../components/news/news.component';
 import { Menu } from '../pages/footer/footer.component';
 import { FileList } from '../components/file-list/file-list.component';
 import { ContactTable } from '../components/contact-table/contact-table.component';
+import { Gallery } from '../components/gallery/gallery.component';
 
 
 export interface Module {
@@ -87,7 +88,7 @@ export class ContentService {
         ]
       },
       parkeringgarage: {
-        title: 'Vägar, parkering och garage',
+        title: 'Parkering, Garage & Vägar',
         description: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
         modules: [
           this.getModule('parkeringGarageHero'),
@@ -237,8 +238,8 @@ export class ContentService {
         type: 'hero',
         hero: {
           top: 'Kontaktinformation',
-          header: 'Styrelsen och Föreningsfakta',
-          p: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
+          header: 'Styrelsen & Föreningsfakta',
+          ptemp: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
           image: './assets/images/image12.jpg',
           version: 'light',
           size: 'medium',           
@@ -247,8 +248,8 @@ export class ContentService {
       reglerHero: {
         type: 'hero',
         hero: {
-          header: 'Regler',
-          p: 'Här hittar du information om samfällighetens relger',
+          header: 'Samfällighetens Regler',
+          ptemp: 'Här hittar du information om samfällighetens relger',
           image: './assets/images/image3.jpg',
           version: 'light',
           size: 'medium',           
@@ -257,8 +258,8 @@ export class ContentService {
       stadgarHero: {
         type: 'hero',
         hero: {
-          header: 'Stadgar',
-          p: 'Här hittar du information om samfällighetens stadgar',
+          header: 'Samfällighetens Stadgar',
+          ptemp: 'Här hittar du information om samfällighetens stadgar',
           image: './assets/images/image10.jpg',
           version: 'light',
           size: 'medium',           
@@ -268,7 +269,7 @@ export class ContentService {
         type: 'hero',
         hero: {
           header: 'Städdagar & Grönområden',
-          p: 'Här hittar du information föreingens städdagar och grönområdet samt klippkartor',
+          ptemp: 'Här hittar du information föreingens städdagar och grönområdet samt klippkartor',
           image: './assets/images/image8.jpg',
           version: 'light',
           size: 'medium',           
@@ -277,8 +278,8 @@ export class ContentService {
       parkeringGarageHero: {
         type: 'hero',
         hero: {
-          header: 'Vägar, parkering och garage',
-          p: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
+          header: 'Parkering, Garage & Vägar',
+          ptemp: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
           image: './assets/images/image7.jpg',
           version: 'light',
           size: 'medium',           
@@ -288,7 +289,7 @@ export class ContentService {
         type: 'hero',
         hero: {
           header: 'TV och Fiber',
-          p: 'Här hittar du information om TV-utbudet samt fiber',
+          ptemp: 'Här hittar du information om TV-utbudet samt fiber',
           image: './assets/images/image11.jpg',
           version: 'light',
           size: 'medium',           
@@ -298,8 +299,8 @@ export class ContentService {
         type: 'hero',
         hero: {
           top: 'Arkiv',
-          header: 'Dokument och ritningar',
-          p: 'Här hittar du dokument, ritningar informationsbrev, med mera',
+          header: 'Dokument & ritningar',
+          ptemp: 'Här hittar du dokument, ritningar informationsbrev, med mera',
           image: './assets/images/image13.jpg',
           version: 'light',
           size: 'medium',           
@@ -399,8 +400,14 @@ export class ContentService {
           newsItems: [
             {
               top: 'Maj 2018',
+              header: 'Ny "Vippy"',
+              text: 'Ny "vippy" gungbräda är på plats!',
+              image: './assets/images/image16.jpg'
+            }, 
+            {
+              top: 'Maj 2018',
               header: 'Ny hemsida',
-              text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida som inte innehåller några personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
+              text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida med ett minimum personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
               image: './assets/images/image1.jpg'
             },      
             {
@@ -426,17 +433,14 @@ export class ContentService {
               {
                 header: 'Anläggningsbeslut',
                 text: 'Anläggningsbeslut för samfälligheten',
-                url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
               },
               {
                 header: 'Fiber AV',
                 text: 'Ritning över fibernät Billdals Aspväg',
-                url: 'https://ostralindas.se/arkiv/protokoll?DocId=3691'
               },
               {
                 header: 'Fiber LV',
                 text: 'Ritning över fibernät Lindåsvägen',
-                url: 'http://ostralindas.se/arkiv/protokoll?DocId=3692'
               }, 
             ]
           }
@@ -448,39 +452,33 @@ export class ContentService {
           files: [
             {
               header: 'Välkomstbrev',
-              text: 'Välkomstbrev till nya medlemmar',
-              url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
             },
             {
               header: 'Julbrev 2017',
-              url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
             },
             {
               header: 'Sommarbrev 2017',
-              url: 'https://ostralindas.se/arkiv/protokoll?DocId=3691'
             },
             {
               header: 'Julbrev 2016',
-              url: 'http://ostralindas.se/arkiv/protokoll?DocId=3948'
             },
             {
               header: 'Sommarbrev 2016',
-              url: 'https://ostralindas.se/arkiv/protokoll?DocId=3691'
             },    
           ]
         }
       },
       startGallery: {
         type: 'gallery',
-        gallery: {
+        gallery: <Gallery> {
           version: 'muted',
           images: [
-            { url: './assets/images/image2.jpg' },
+            { url: './assets/images/image15.jpg' },
             { url: './assets/images/image3.jpg' },
             { url: './assets/images/image5.jpg' },
             { url: './assets/images/image4.jpg' },
-            { url: './assets/images/image6.jpg' },
-            { url: './assets/images/image8.jpg' }
+            { url: './assets/images/image9.jpg' },
+            { url: './assets/images/image14.jpg' },
           ]
         }
       }        
