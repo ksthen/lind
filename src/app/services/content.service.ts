@@ -240,7 +240,7 @@ export class ContentService {
           top: 'Kontaktinformation',
           header: 'Styrelsen & Föreningsfakta',
           ptemp: 'Här hittar du kontaktuppgifter till styrelsen samt fakta om föreningen',
-          image: './assets/images/image12.jpg',
+          image: './assets/images/image19.jpg',
           version: 'light',
           size: 'medium',           
         }
@@ -442,6 +442,12 @@ export class ContentService {
                 header: 'Fiber LV',
                 text: 'Ritning över fibernät Lindåsvägen',
               }, 
+              {
+                header: 'Anfallspolicy',
+              },     
+              {
+                header: 'Mall motion till årsmötet',
+              },                          
             ]
           }
       },
@@ -476,9 +482,9 @@ export class ContentService {
             { url: './assets/images/image15.jpg' },
             { url: './assets/images/image3.jpg' },
             { url: './assets/images/image5.jpg' },
-            { url: './assets/images/image4.jpg' },
-            { url: './assets/images/image9.jpg' },
-            { url: './assets/images/image14.jpg' },
+            { url: './assets/images/image17.jpg' },
+            { url: './assets/images/image18.jpg' },
+            { url: './assets/images/image19.jpg' },
           ]
         }
       }        
@@ -502,9 +508,9 @@ export class ContentService {
             Angränsande till området ligger Lindåsskolan som har cirka 590 elever från förskoleklass till årskurs 9. På skolan finns ett fritidshem med fyra avdelningar. I närområdet finns det förskolor; Lindebovägen, Södra Särövägen( även känd som Sommarbo) och Kyrkvägen.
             Föreningen förvaltar den gemensamma anläggningssamfälligheten genom en styrelse som följer föreningens lagar stadgar och de lagar som gäller för samfällighetsföreningar.
       
-            Om Du önskar förändringar är du välkommen att lämna in skriftlig motion senast 10 februari till styrelsens ordförande. Du är givetvis mycket välkommen med förbättringsförslag som du lämpligast ställer till styrelsen eller lämplig ledamot.
-            Städdagar hålls normalt två gånger per år, vår och höst. Det är mycket viktigt att alla som orkar ställer upp, då ansvaret att hålla området i ordning vilar på alla. Risken är annars att årsavgiften måste höjas för att bekosta städning, rabatt- och buskvård etc.
-            Enligt årsmötes beslut 2017 debiteras inte 2000:- per fastighet vid aktivt deltagande lördag och söndag på våra två städhelger eller annan dag enligt överenskommelse. Om man ej kan deltaga på städdag och vill slippa kostnaden skall man meddela någon i styrelsen eller områdesansvariga, sk städledare, för att få en uppgift som kan utföras på annan dag än städdag.
+            Om Du önskar förändringar är du välkommen att lämna in skriftlig motion senast 10 februari till styrelsens ordförande (använd gärna [den här mallen](/dokument)). Du är givetvis mycket välkommen med förbättringsförslag som du lämpligast ställer till styrelsen eller lämplig ledamot.
+            Städdagar hålls normalt två gånger per år, vår och höst. Det är mycket viktigt att alla ställer upp, då ansvaret att hålla området i ordning vilar på alla. Risken är annars att årsavgiften måste höjas för att bekosta städning, rabatt- och buskvård etc.
+            Enligt årsmötes beslut 2017 ger ett aktivt deltagande under städdagarna en återbetalning på 1000:-  per städ tillfälle. Om man ej kan deltaga på städdag och vill slippa kostnaden skall man meddela någon i styrelsen eller områdesansvariga, sk städledare, för att få en uppgift som kan utföras på annan dag än städdag.
       
             I området finns en landhockeybana som föreningen underhåller och alla områdets medlemmar är välkomna att använda. Respektera de ordningsregler som finns uppsatta invid banan.
             Tennisbanan ägs av Göteborgs stad och underhålls dessvärre dåligt. Det går dock att spela på banan.
@@ -549,6 +555,8 @@ export class ContentService {
             ### Avfall
             Det är förbjudet att slänga trädgårdsavfall eller fyllnadsmaterial (jord, lera etc.) i skogen runt området. Brännbart trädgårdsavfall från egen tomt är tillåtet att slänga i de sopbilar som används vid städdagarna.
             I samband med förändringen av sophanteringen 2005 för hushållen i området har styrelsen tagit fram följande policy för att vägleda föreningens medlemmar. 
+
+            [Länk till policy ](dokumentu)
             
             ### Garage
             Varje medlem i Samfälligheten tillhandahålls en parkeringsplats i till Samfälligheten tillhörande garagelängor.
