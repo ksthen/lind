@@ -411,17 +411,17 @@ export class ContentService {
               image: './assets/images/image1.jpg'
             },      
             {
-              top: 'Maj 2018',
-              header: 'Årsmötesprotokoll',
-              text: 'Protokollet från årsmötet är nu distribuerat. Protokollet kan även tillhandahålls av styrelsen på begäran.',
-              image: './assets/images/image9.jpg'
-            },
-            {
               top: '21-22 Oktober',
               header: 'Höstens städdagar',
               text: 'Höstens städdagar är planerade till 21-22 Oktober',
               image: './assets/images/image8.jpg'
-            }
+            },
+            {
+              top: 'Maj 2018',
+              header: 'Årsmötesprotokoll',
+              text: 'Protokollet från årsmötet är nu distribuerat. Protokollet kan även tillhandahålls av styrelsen på begäran.',
+              image: './assets/images/image9.jpg'
+            },            
           ]
         }
       },

@@ -4,13 +4,6 @@
       [ngStyle]="{'background-image': 'url(' + menu.background + ')'}">
       <div class="modal-body">
         <div class="overlay">
-          <button 
-            type="button" 
-            class="btn close" 
-            aria-label="Close" 
-            (click)="closeModal()">
-                <span aria-hidden="true">&times;</span>
-          </button>
           <div class="container">
             <div class="row">
               <div class="col text-center"  [@slideIn]>
@@ -28,6 +21,15 @@
                 </ng-container>
               </div>
             </div>
+          </div>
+          <div class="button-container">
+              <button 
+              type="button" 
+              class="btn close" 
+              aria-label="Close" 
+              (click)="closeModal()">
+                  <span aria-hidden="true">&times;</span>
+            </button>
           </div>
         </div>
       </div>  

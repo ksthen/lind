@@ -10,11 +10,11 @@
         </div>
         <div class="col-sm-12 col-md-8">
           <h4>{{ n.top }}</h4>
-          <h3>{{ n.heading }}</h3>
+          <h3>{{ n.header }}</h3>
           <p>{{ n.text }}</p>
         </div>
     </div>
-    <div class="row mb-5" *ngIf="displayNews === news.newsItems">
+    <div class="row mb-5" *ngIf="displayNews.length !== news.newsItems.length">
         <div class="col-sm-12 text-center mt-4">
             <button class="btn btn-primary" [ngClass]="{'disabled': displayNews === news.newsItems}" (click)="showAllNews()">Ladda fler</button>
           </div>
