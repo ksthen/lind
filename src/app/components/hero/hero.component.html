@@ -13,17 +13,17 @@
                         <a *ngIf="hero.linkOne.type === 'external'" 
                         [href]="hero.linkOne.href" 
                         target="_blank"
-                        class="btn btn-outline-light mr-2 mt-3">
+                        class="btn btn-outline-light mr-2 mt-3 text-light">
                                 {{ hero.linkOne.text }}
                         </a>
                         <a *ngIf="hero.linkOne.type === 'internal'" 
                         [routerLink]="['/' + hero.linkOne.href]" 
-                                class="btn btn-outline-light mr-2  mt-3">
+                                class="btn btn-outline-light mr-2  mt-3 text-light">
                                 {{ hero.linkOne.text }}
                         </a>
                         <a *ngIf="hero.linkOne.type === 'anchor'" 
                         (click)="scrollTo(hero.linkOne.href)" 
-                        class="btn btn-outline-light mr-2 mt-3">
+                        class="btn btn-outline-light mr-2 mt-3 text-light">
                                 {{ hero.linkOne.text }}
                         </a>    
                         </ng-container>
@@ -31,17 +31,17 @@
                                 <a *ngIf="hero.linkTwo.type === 'external'" 
                                 [href]="hero.linkTwo.href" 
                                 target="_blank"
-                                class="btn btn-outline-light ml-2 mt-3">
+                                class="btn btn-outline-light ml-2 mt-3 text-light">
                                         {{ hero.linkTwo.text }}
                                 </a>
                                 <a *ngIf="hero.linkTwo.type === 'internal'" 
                                 [routerLink]="hero.linkTwo.href" 
-                                class="btn btn-outline-light ml-2 mt-3">
+                                class="btn btn-outline-light ml-2 mt-3 text-light">
                                         {{ hero.linkTwo.text }}
                                 </a>
                                 <a *ngIf="hero.linkTwo.type === 'anchor'" 
                                 (click)="scrollTo(hero.linkTwo.href)" 
-                                class="btn btn-outline-light ml-2 mt-3">
+                                class="btn btn-outline-light ml-2 mt-3 text-light">
                                         {{ hero.linkTwo.text }}
                                 </a> 
                         </ng-container>
