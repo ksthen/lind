@@ -29,7 +29,7 @@
       xhr.send();
     }
   </script>
-<link rel="stylesheet" href="styles.8d66b390f9d91c2e2893.css"><style ng-transition="my-app">.modal[_ngcontent-c10] {
+<link rel="stylesheet" href="styles.c8b3025254580ea077b1.css"><style ng-transition="my-app">.modal[_ngcontent-c10] {
   display: block; }
 
 .modal-body[_ngcontent-c10] {
@@ -53,6 +53,8 @@
 
 .container[_ngcontent-c10] {
   position: absolute;
+  overflow: scroll;
+  max-height: 100vh;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -60,10 +62,17 @@
   z-index: 1;
   border: none; }
 
+.button-container[_ngcontent-c10] {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  z-index: 999;
+  border: none; }
+
 li[_ngcontent-c10] {
   margin-top: 1rem; }</style></head>
 <body>
-  <app-root ng-version="6.0.0"><router-outlet id="top"></router-outlet><app-menu _nghost-c10="" class="ng-tns-c10-0 ng-star-inserted"><div _ngcontent-c10="" class="modal"><!----><div _ngcontent-c10="" class="ng-tns-c10-0 ng-star-inserted" style="background-image:url(./assets/images/image1.jpg);"><div _ngcontent-c10="" class="modal-body"><div _ngcontent-c10="" class="overlay"><button _ngcontent-c10="" class="btn close" aria-label="Close" type="button"><span _ngcontent-c10="" class="ng-tns-c10-0" aria-hidden="true">×</span></button><div _ngcontent-c10="" class="container"><div _ngcontent-c10="" class="row"><div _ngcontent-c10="" class="col text-center ng-trigger ng-trigger-slideIn"><!----><!----><h3 _ngcontent-c10="" class="slide-in-bottom mt-5 ng-tns-c10-0 ng-star-inserted" style="">Föreningen</h3><ul _ngcontent-c10="" class="list-unstyled ng-tns-c10-0 ng-star-inserted" style=""><!----><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/start"> Nyheter / Om föreningen </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/styrelsen"> Styrelsen / Föreningsfakta </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/regler"> Regler </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/stadgar"> Stadgar </a></li></ul><!----><h3 _ngcontent-c10="" class="slide-in-bottom mt-5 ng-tns-c10-0 ng-star-inserted" style="">Samfälligheten</h3><ul _ngcontent-c10="" class="list-unstyled ng-tns-c10-0 ng-star-inserted" style=""><!----><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/staddagar"> Städdagar / Grönområden </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/parkeringgarage"> Parkering, Garage / Vägar </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/tvfiber"> TV / Fiber </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/dokument"> Dokument </a></li></ul></div></div></div></div></div></div></div></app-menu></app-root>
+  <app-root ng-version="6.0.0"><router-outlet id="top"></router-outlet><app-menu _nghost-c10="" class="ng-tns-c10-0 ng-star-inserted"><div _ngcontent-c10="" class="modal"><!----><div _ngcontent-c10="" class="ng-tns-c10-0 ng-star-inserted" style="background-image:url(./assets/images/image1.jpg);"><div _ngcontent-c10="" class="modal-body"><div _ngcontent-c10="" class="overlay"><div _ngcontent-c10="" class="container"><div _ngcontent-c10="" class="row"><div _ngcontent-c10="" class="col text-center ng-trigger ng-trigger-slideIn"><!----><!----><h3 _ngcontent-c10="" class="slide-in-bottom mt-5 ng-tns-c10-0 ng-star-inserted" style="">Föreningen</h3><ul _ngcontent-c10="" class="list-unstyled ng-tns-c10-0 ng-star-inserted" style=""><!----><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/start"> Nyheter / Om föreningen </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/styrelsen"> Styrelsen / Föreningsfakta </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/regler"> Regler </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/stadgar"> Stadgar </a></li></ul><!----><h3 _ngcontent-c10="" class="slide-in-bottom mt-5 ng-tns-c10-0 ng-star-inserted" style="">Samfälligheten</h3><ul _ngcontent-c10="" class="list-unstyled ng-tns-c10-0 ng-star-inserted" style=""><!----><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/staddagar"> Städdagar / Grönområden </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/parkeringgarage"> Parkering, Garage / Vägar </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/tvfiber"> TV / Fiber </a></li><li _ngcontent-c10="" class="slide-in-bottom ng-tns-c10-0 ng-star-inserted"><a _ngcontent-c10="" class="text-dark" href="/lind/dokument"> Dokument </a></li></ul></div></div></div><div _ngcontent-c10="" class="button-container"><button _ngcontent-c10="" class="btn close" aria-label="Close" type="button"><span _ngcontent-c10="" class="ng-tns-c10-0" aria-hidden="true">×</span></button></div></div></div></div></div></app-menu></app-root>
 
 
-<script type="text/javascript" src="runtime.6afe30102d8fe7337431.js"></script><script type="text/javascript" src="polyfills.4d43ed2fd4a773d022f6.js"></script><script type="text/javascript" src="main.75d76285546cf39e2de6.js"></script><script id="my-app-state" type="application/json">{}</script></body></html>
+<script type="text/javascript" src="runtime.6afe30102d8fe7337431.js"></script><script type="text/javascript" src="polyfills.4d43ed2fd4a773d022f6.js"></script><script type="text/javascript" src="main.eff2fd1f08391ada394d.js"></script><script id="my-app-state" type="application/json">{}</script></body></html>
