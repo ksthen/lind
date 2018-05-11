@@ -2,9 +2,11 @@
   class="container-fluid" 
   *ngIf="gallery" 
   [ngClass]="{'bg-secondary': gallery.version === 'muted'}">
-  <div class="row no-gutters pt-4 pb-4">
-      <div class="col-6 col-sm-4" *ngFor="let g of gallery.images">
-          <app-responsive-image [image]="g.url" class="image-fulid"></app-responsive-image>
-        </div>
+  <div class="container">
+    <div class="row no-gutters pt-4 pb-4">
+        <div class="col-6 col-sm-4 gallery-item" *ngFor="let g of gallery.images">
+            <app-responsive-image [image]="g.url" class="image-fulid"></app-responsive-image>
+          </div>
+    </div>
   </div>
 </div>
