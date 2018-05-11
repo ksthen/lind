@@ -1011,7 +1011,7 @@ var i2 = __webpack_require__(/*! ./responsive-image.component */ "./src/app/comp
 var styles_ResponsiveImageComponent = [i0.styles];
 var RenderType_ResponsiveImageComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_ResponsiveImageComponent, data: {} });
 exports.RenderType_ResponsiveImageComponent = RenderType_ResponsiveImageComponent;
-function View_ResponsiveImageComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [], [[8, "src", 4], [8, "srcset", 4], [8, "sizes", 0]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.image; var currVal_1 = _co.srcset; var currVal_2 = "(min-width: 640px) 640px, 100vw"; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2); }); }
+function View_ResponsiveImageComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [], [[8, "src", 4], [8, "srcset", 4], [8, "sizes", 0]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.image; var currVal_1 = _co.srcset; var currVal_2 = "(min-width: 320px) 320px, 100vw"; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2); }); }
 exports.View_ResponsiveImageComponent_0 = View_ResponsiveImageComponent_0;
 function View_ResponsiveImageComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-responsive-image", [], null, null, null, View_ResponsiveImageComponent_0, RenderType_ResponsiveImageComponent)), i1.ɵdid(1, 114688, null, 0, i2.ResponsiveImageComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_ResponsiveImageComponent_Host_0 = View_ResponsiveImageComponent_Host_0;
