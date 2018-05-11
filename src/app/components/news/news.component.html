@@ -6,7 +6,7 @@
     </div>
     <div class="row align-items-center " *ngFor="let n of displayNews">
         <div class="col-sm-12 col-md-4 pt-3 pb-3 fade-in">
-          <img class="img-fluid"  [src]="n.image"/>
+          <app-responsive-image class="img-fluid"  [image]="n.image"></app-responsive-image>
         </div>
         <div class="col-sm-12 col-md-8">
           <h4>{{ n.top }}</h4>
