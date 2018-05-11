@@ -1947,7 +1947,7 @@ var ContentService = /** @class */ (function () {
                         { url: './assets/images/image5.jpg' },
                         { url: './assets/images/image17.jpg' },
                         { url: './assets/images/image18.jpg' },
-                        { url: './assets/images/image19.jpg' },
+                        { url: './assets/images/image19.jpg' }
                     ]
                 }
             }
