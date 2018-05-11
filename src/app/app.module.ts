@@ -39,7 +39,7 @@ import { ResponsiveImageComponent } from './components/responsive-image/responsi
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
     RouterModule.forRoot([
-      { path: '', redirectTo: 'start', pathMatch: 'full'},
+      { path: '', component: StartComponent},
       { path: 'start', component: StartComponent},
       { path: 'styrelsen', component: StartComponent},
       { path: 'regler', component: StartComponent},
