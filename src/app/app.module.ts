@@ -18,6 +18,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactTableComponent } from './components/contact-table/contact-table.component';
+import { ResponsiveImageComponent } from './components/responsive-image/responsive-image.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ContactTableComponent } from './components/contact-table/contact-table.
     TopBarComponent,
     MenuComponent,
     GalleryComponent,
-    ContactTableComponent
+    ContactTableComponent,
+    ResponsiveImageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),

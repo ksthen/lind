@@ -712,18 +712,20 @@ exports.FileListComponent = FileListComponent;
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./gallery.component.scss.shim.ngstyle */ "./src/app/components/gallery/gallery.component.scss.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
-var i3 = __webpack_require__(/*! ./gallery.component */ "./src/app/components/gallery/gallery.component.ts");
+var i2 = __webpack_require__(/*! ../responsive-image/responsive-image.component.ngfactory */ "./src/app/components/responsive-image/responsive-image.component.ngfactory.js");
+var i3 = __webpack_require__(/*! ../responsive-image/responsive-image.component */ "./src/app/components/responsive-image/responsive-image.component.ts");
+var i4 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var i5 = __webpack_require__(/*! ./gallery.component */ "./src/app/components/gallery/gallery.component.ts");
 var styles_GalleryComponent = [i0.styles];
 var RenderType_GalleryComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_GalleryComponent, data: {} });
 exports.RenderType_GalleryComponent = RenderType_GalleryComponent;
-function View_GalleryComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "div", [["class", "col-6 col-sm-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "img", [["class", "img-fluid"]], [[8, "src", 4]], null, null, null, null))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.url; _ck(_v, 1, 0, currVal_0); }); }
-function View_GalleryComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "bg-secondary": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 2, "div", [["class", "row no-gutters pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_2)), i1.ɵdid(5, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "container-fluid"; var currVal_1 = _ck(_v, 2, 0, (_co.gallery.version === "muted")); _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_2 = _co.gallery.images; _ck(_v, 5, 0, currVal_2); }, null); }
-function View_GalleryComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.gallery; _ck(_v, 1, 0, currVal_0); }, null); }
+function View_GalleryComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [["class", "col-6 col-sm-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "app-responsive-image", [["class", "image-fulid"]], null, null, null, i2.View_ResponsiveImageComponent_0, i2.RenderType_ResponsiveImageComponent)), i1.ɵdid(2, 114688, null, 0, i3.ResponsiveImageComponent, [], { image: [0, "image"] }, null)], function (_ck, _v) { var currVal_0 = _v.context.$implicit.url; _ck(_v, 2, 0, currVal_0); }, null); }
+function View_GalleryComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i4.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "bg-secondary": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 2, "div", [["class", "row no-gutters pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_2)), i1.ɵdid(5, 802816, null, 0, i4.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "container-fluid"; var currVal_1 = _ck(_v, 2, 0, (_co.gallery.version === "muted")); _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_2 = _co.gallery.images; _ck(_v, 5, 0, currVal_2); }, null); }
+function View_GalleryComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_1)), i1.ɵdid(1, 16384, null, 0, i4.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.gallery; _ck(_v, 1, 0, currVal_0); }, null); }
 exports.View_GalleryComponent_0 = View_GalleryComponent_0;
-function View_GalleryComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gallery", [], null, null, null, View_GalleryComponent_0, RenderType_GalleryComponent)), i1.ɵdid(1, 114688, null, 0, i3.GalleryComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_GalleryComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gallery", [], null, null, null, View_GalleryComponent_0, RenderType_GalleryComponent)), i1.ɵdid(1, 114688, null, 0, i5.GalleryComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_GalleryComponent_Host_0 = View_GalleryComponent_Host_0;
-var GalleryComponentNgFactory = i1.ɵccf("app-gallery", i3.GalleryComponent, View_GalleryComponent_Host_0, { gallery: "gallery" }, {}, []);
+var GalleryComponentNgFactory = i1.ɵccf("app-gallery", i5.GalleryComponent, View_GalleryComponent_Host_0, { gallery: "gallery" }, {}, []);
 exports.GalleryComponentNgFactory = GalleryComponentNgFactory;
 
 
@@ -981,6 +983,105 @@ var NewsComponent = /** @class */ (function () {
     return NewsComponent;
 }());
 exports.NewsComponent = NewsComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/components/responsive-image/responsive-image.component.ngfactory.js":
+/*!*************************************************************************************!*\
+  !*** ./src/app/components/responsive-image/responsive-image.component.ngfactory.js ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./responsive-image.component.scss.shim.ngstyle */ "./src/app/components/responsive-image/responsive-image.component.scss.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! ./responsive-image.component */ "./src/app/components/responsive-image/responsive-image.component.ts");
+var styles_ResponsiveImageComponent = [i0.styles];
+var RenderType_ResponsiveImageComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_ResponsiveImageComponent, data: {} });
+exports.RenderType_ResponsiveImageComponent = RenderType_ResponsiveImageComponent;
+function View_ResponsiveImageComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 0, "img", [], [[8, "src", 4], [8, "srcset", 4]], null, null, null, null))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.image; var currVal_1 = _co.srcset; _ck(_v, 0, 0, currVal_0, currVal_1); }); }
+exports.View_ResponsiveImageComponent_0 = View_ResponsiveImageComponent_0;
+function View_ResponsiveImageComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-responsive-image", [], null, null, null, View_ResponsiveImageComponent_0, RenderType_ResponsiveImageComponent)), i1.ɵdid(1, 114688, null, 0, i2.ResponsiveImageComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_ResponsiveImageComponent_Host_0 = View_ResponsiveImageComponent_Host_0;
+var ResponsiveImageComponentNgFactory = i1.ɵccf("app-responsive-image", i2.ResponsiveImageComponent, View_ResponsiveImageComponent_Host_0, { image: "image" }, {}, []);
+exports.ResponsiveImageComponentNgFactory = ResponsiveImageComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/components/responsive-image/responsive-image.component.scss.shim.ngstyle.js":
+/*!*********************************************************************************************!*\
+  !*** ./src/app/components/responsive-image/responsive-image.component.scss.shim.ngstyle.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [""];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/components/responsive-image/responsive-image.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/components/responsive-image/responsive-image.component.ts ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var ResponsiveImageComponent = /** @class */ (function () {
+    function ResponsiveImageComponent() {
+    }
+    ResponsiveImageComponent.prototype.ngOnInit = function () {
+        if (this.image.slice(-3) === 'jpg' ||
+            this.image.slice(-3) === 'JPG' ||
+            this.image.slice(-3) === 'png' ||
+            this.image.slice(-3) === 'PNG' ||
+            this.image.slice(-3) === 'gif' ||
+            this.image.slice(-3) === 'GIF') {
+            var i = this.image.slice(0, -4);
+            this.srcset =
+                i + '-320' + this.image.slice(-4) + ' 320w, ' +
+                    i + '-640' + this.image.slice(-4) + ' 640w, ' +
+                    i + '-1280' + this.image.slice(-4) + ' 1280w, ' +
+                    i + '-1920' + this.image.slice(-4) + ' 1920w, ';
+        }
+        else if (this.image.slice(-4) === 'jpeg' ||
+            this.image.slice(-4) === 'JPEG') {
+            var i = this.image.slice(0, -5);
+            this.srcset =
+                i + '-320' + this.image.slice(-5) + ' 320w, ' +
+                    i + '-640' + this.image.slice(-5) + ' 640w, ' +
+                    i + '-1280' + this.image.slice(-5) + ' 1280w, ' +
+                    i + '-1920' + this.image.slice(-5) + ' 1920w, ';
+        }
+    };
+    return ResponsiveImageComponent;
+}());
+exports.ResponsiveImageComponent = ResponsiveImageComponent;
 
 
 /***/ }),
