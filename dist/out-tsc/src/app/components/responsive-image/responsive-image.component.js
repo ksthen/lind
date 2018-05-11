@@ -23,11 +23,18 @@ var ResponsiveImageComponent = /** @class */ (function () {
             var i = this.image.slice(0, -4);
             this.srcset =
                 i + '-320' + this.image.slice(-4) + ' 320w, ' +
-                    i + '-6' + this.image.slice(-4) + ' 320w, ' +
-                    i + '-320' + this.image.slice(-4) + ' 320w, ' +
-                    srcset;
-            "cat-160.jpg 160w, cat-320.jpg 320w, cat-640.jpg 640w, cat-1280.jpg 1280w" >
-            ;
+                    i + '-640' + this.image.slice(-4) + ' 640w, ' +
+                    i + '-1280' + this.image.slice(-4) + ' 1280w, ' +
+                    i + '-1920' + this.image.slice(-4) + ' 1920w, ';
+        }
+        else if (this.image.slice(-4) === 'jpeg' ||
+            this.image.slice(-4) === 'JPEG') {
+            var i = this.image.slice(0, -5);
+            this.srcset =
+                i + '-320' + this.image.slice(-5) + ' 320w, ' +
+                    i + '-640' + this.image.slice(-5) + ' 640w, ' +
+                    i + '-1280' + this.image.slice(-5) + ' 1280w, ' +
+                    i + '-1920' + this.image.slice(-5) + ' 1920w, ';
         }
     };
     __decorate([

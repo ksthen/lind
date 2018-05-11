@@ -32,9 +32,7 @@ var walk = function (dir, done) {
                 } else {
 
 
-                    if (file.slice(-3) === 'jpg' ||  
-                        file.slice(-3) === 'JPG' ||
-                        file.slice(-3) === 'gif' ||
+                    if (file.slice(-3) === 'gif' ||
                         file.slice(-3) === 'GIF' ||
                         file.slice(-3) === 'png' ||
                         file.slice(-3) === 'PNG') {       
@@ -79,9 +77,98 @@ var walk = function (dir, done) {
                                 console.log('stdout:', stdout);
                         });
 
-                    } else if (file.slice(-3) === 'jpeg' ||  file.slice(-3) === 'JPEG') {
+                    } else if (file.slice(-4) === 'jpeg' ||  file.slice(-4) === 'JPEG') {
                         // 1920
-                        im.convert([file, '-resize', '1920', file.slice(0, -5) + '-1920' + file.slice(-5)], 
+                        im.convert([
+                            file, 
+                            '-resize', '1920',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -5) + '-1920' + file.slice(-5)], 
+                        function(err, stdout){
+                            if (err) throw err;
+                                console.log('err', err);
+                                console.log('stdout:', stdout);
+                        });      
+
+
+                        // 1280
+                        im.convert([
+                            file, 
+                            '-resize', '1280',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -5) + '-1280' + file.slice(-5)], 
+                        function(err, stdout){
+                            if (err) throw err;
+                                console.log('err', err);
+                                console.log('stdout:', stdout);
+                        });
+
+                        // 960
+                        im.convert([
+                            file, 
+                            '-resize', '960',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -5) + '-960' + file.slice(-5)], 
+                        function(err, stdout){
+                            if (err) throw err;
+                                console.log('err', err);
+                                console.log('stdout:', stdout);
+                        });
+
+                        // 640
+                        im.convert([
+                            file, 
+                            '-resize', '640',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -5) + '-640' + file.slice(-5)], 
+                        function(err, stdout){
+                            if (err) throw err;
+                                console.log('err', err);
+                                console.log('stdout:', stdout);
+                        });                           
+
+                        // 320
+                        im.convert([
+                            file, 
+                            '-resize', '320',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -5) + '-320' + file.slice(-5)], 
+                        function(err, stdout){
+                            if (err) throw err;
+                                console.log('err', err);
+                                console.log('stdout:', stdout);
+                        });                            
+                    }  else if (file.slice(-3) === 'jpg' ||  file.slice(-3) === 'JPG') {
+                        // 1920
+                        im.convert([
+                            file, 
+                            '-resize', '1920',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -4) + '-1920' + file.slice(-4)], 
                         function(err, stdout){
                             if (err) throw err;
                                 console.log('err', err);
@@ -90,7 +177,15 @@ var walk = function (dir, done) {
 
                         
                         // 1280
-                        im.convert([file, '-resize', '1280', file.slice(0, -5) + '-1280' + file.slice(-5)], 
+                        im.convert([
+                            file, 
+                            '-resize', '1280',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -4) + '-1280' + file.slice(-4)], 
                         function(err, stdout){
                             if (err) throw err;
                                 console.log('err', err);
@@ -98,7 +193,15 @@ var walk = function (dir, done) {
                         });
 
                         // 960
-                        im.convert([file, '-resize', '960', file.slice(0, -5) + '-960' + file.slice(-5)], 
+                        im.convert([
+                            file, 
+                            '-resize', '960',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -4) + '-960' + file.slice(-4)], 
                         function(err, stdout){
                             if (err) throw err;
                                 console.log('err', err);
@@ -106,7 +209,15 @@ var walk = function (dir, done) {
                         });
 
                         // 640
-                        im.convert([file, '-resize', '640', file.slice(0, -5) + '-640' + file.slice(-5)], 
+                        im.convert([
+                            file, 
+                            '-resize', '640',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -4) + '-640' + file.slice(-4)], 
                         function(err, stdout){
                             if (err) throw err;
                                 console.log('err', err);
@@ -114,7 +225,15 @@ var walk = function (dir, done) {
                         });                           
 
                         // 320
-                        im.convert([file, '-resize', '320', file.slice(0, -5) + '-320' + file.slice(-5)], 
+                        im.convert([
+                            file, 
+                            '-resize', '320',
+                            '-sampling-factor', '4:2:0', 
+                            '-strip',
+                            '-interlace', 'JPEG', 
+                            '-colorspace', 'sRGB',
+                            '-quality',  '60', 
+                            file.slice(0, -4) + '-320' + file.slice(-4)], 
                         function(err, stdout){
                             if (err) throw err;
                                 console.log('err', err);
