@@ -2053,7 +2053,7 @@ exports.LAZY_MODULE_MAP = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Kristoffer/Documents/Privat/Development/lind/src/main.server.ts */"./src/main.server.ts");
+module.exports = __webpack_require__(/*! /Users/ksthen/Documents/Dev/lind/src/main.server.ts */"./src/main.server.ts");
 
 
 /***/ }),
