@@ -128,12 +128,12 @@ export const galleryAnimation =
     transition('* => *', [
       query(
         '.gallery-image',
-        style({ transform: 'translateY(20px)', opacity: 0 }),
+        style({ opacity: 0 }),
       ),
       query(
         '.gallery-image', 
         stagger('40ms', [
-          animate('200ms', style('*')),
+          animate('400ms', style('*')),
         ]),
         { optional: true }),
     ]),    
@@ -144,12 +144,12 @@ export const newsAnimation =
     transition('* => *', [
       query(
         '.news-item',
-        style({ transform: 'translateX(20px)', opacity: 0 }),
+        style({ opacity: 0 }),
       ),
       query(
         '.news-item', 
         stagger('40ms', [
-          animate('200ms', style('*')),
+          animate('400ms', style('*')),
         ]),
         { optional: true }),
     ]),    
