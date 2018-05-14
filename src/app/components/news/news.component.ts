@@ -1,9 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { fadeAnimation } from '../../app.animations';
+import { 
+    Component, OnInit, Input, HostListener, 
+    ElementRef, PLATFORM_ID, Inject } from '@angular/core';
+import { fadeAnimation, galleryAnimation, newsAnimation } from '../../app.animations';
+import { isPlatformBrowser } from '@angular/common';
 
 export interface News {
   header: string;
-  newsItems: Array<NewsItem>;
+  newsItems: NewsItem[];
 }
 
 export interface NewsItem {
@@ -18,25 +21,53 @@ export interface NewsItem {
   selector: 'app-news',
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.scss'],
-  animations: [fadeAnimation]
+  animations: [newsAnimation],
 })
 export class NewsComponent implements OnInit {
 
   @Input() news: News;
-  displayNews: Array<NewsItem>;
+  displayNews: NewsItem[];
 
-  constructor() { }
+  public state: string;
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    if (isPlatformBrowser(this.platformId)) {
+      const componentPosition = this.el.nativeElement.offsetTop;
+      const scrollPosition = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const offset = 400;
+
+      if (scrollPosition + windowHeight - offset >= componentPosition) {
+        this.state = 'show';
+      } else if (scrollPosition + windowHeight - offset * 2 < componentPosition) {
+        this.state = 'hide';
+      }
+    }
+  }
+
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: any, 
+    private el: ElementRef) { }
 
   ngOnInit() {
     if (this.news.newsItems) {
-      this.displayNews = this.news.newsItems.filter(item => this.news.newsItems.indexOf(item) < 3);
+      this.displayNews = this.news.newsItems.filter(
+        item => this.news.newsItems.indexOf(item) < 3);
     }
+    if (isPlatformBrowser(this.platformId)) {
+      this.state = 'hide';
+    } else {
+      this.state = 'show';
+    }    
   }
 
   showAllNews() {
     if (this.news.newsItems) {
       this.displayNews = this.news.newsItems;
     }
+    this.state = 'show';
+    
   }
 
 }

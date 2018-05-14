@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export interface ContactTable {
   header: string;
-  contacts: Array<Contact>
+  contacts: Contact[];
 }
 
 export interface Contact {
@@ -15,7 +15,7 @@ export interface Contact {
 @Component({
   selector: 'app-contact-table',
   templateUrl: './contact-table.component.html',
-  styleUrls: ['./contact-table.component.scss']
+  styleUrls: ['./contact-table.component.scss'],
 })
 export class ContactTableComponent implements OnInit {
 

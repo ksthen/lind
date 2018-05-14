@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export interface FileList {
   header: string;
-  files: Array<File>;
+  files: File[];
 }
 
 export interface File {
@@ -14,7 +14,7 @@ export interface File {
 @Component({
   selector: 'app-file-list',
   templateUrl: './file-list.component.html',
-  styleUrls: ['./file-list.component.scss']
+  styleUrls: ['./file-list.component.scss'],
 })
 export class FileListComponent implements OnInit {
 

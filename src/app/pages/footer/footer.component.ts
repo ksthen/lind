@@ -4,12 +4,12 @@ import { isPlatformBrowser } from '@angular/common';
 
 export interface Menu {
   background: string;
-  categories: Array<Category>;
+  categories: Category[];
 }
 
 export interface Category {
   categoryTitle: string;
-  categoryItems: Array<CategoryItem>;
+  categoryItems: CategoryItem[];
 }
 
 export interface CategoryItem {
@@ -20,14 +20,17 @@ export interface CategoryItem {
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
 
   public menu: Menu;
 
 
-  constructor(@Inject(PLATFORM_ID) private platformId: any, private cs: ContentService) { }
+  constructor(
+    @Inject(PLATFORM_ID) 
+    private platformId: any, 
+    private cs: ContentService) { }
 
   ngOnInit() {
     this.menu = this.cs.getMenu();
@@ -36,8 +39,8 @@ export class FooterComponent implements OnInit {
   scrollTo() {
     if (isPlatformBrowser(this.platformId)) {
       const id = document.querySelector('#down');
-      if (id){
-          id.scrollIntoView({ block: 'start', behavior: 'smooth'});
+      if (id) {
+        id.scrollIntoView({ block: 'start', behavior: 'smooth' });
       }
     }
   }

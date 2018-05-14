@@ -13,13 +13,13 @@ export interface Module {
   news?: News;
   files?: FileList;
   article?: string;
-  contactTable?: ContactTable
+  contactTable?: ContactTable;
 }
 
 export interface Page {
   title: string;
   description: string;
-  modules: Array<Module>;
+  modules: Module[];
 }
 
 export interface Data {
@@ -38,8 +38,8 @@ export class ContentService {
         title: '404 - Sidan hittades inte',
         description: 'Sidan hittades inte',
         modules: [
-          this.getModule('notFoundHero')
-        ]
+          this.getModule('notFoundHero'),
+        ],
       },
       start: {
         title: 'Start',
@@ -48,8 +48,8 @@ export class ContentService {
           this.getModule('startHero'),
           this.getModule('startNews'),
           this.getArticle('startArticle'),
-          this.getModule('startGallery')
-        ]
+          this.getModule('startGallery'),
+        ],
       },
       styrelsen: {
         title: 'Styrelsen och föreningsfakta',
@@ -58,7 +58,7 @@ export class ContentService {
           this.getModule('styrelsenHero'),
           this.getModule('styrelsenContactTable'),
           this.getModule('omradesansvarigTable'),
-          this.getArticle('faktaArticle')
+          this.getArticle('faktaArticle'),
         ]   
       },
       regler: {
@@ -66,16 +66,16 @@ export class ContentService {
         description: 'Här hittar du information om samfällighetens relger',
         modules: [
           this.getModule('reglerHero'),
-          this.getArticle('reglerArticle')
-        ]
+          this.getArticle('reglerArticle'),
+        ],
       },
       stadgar: {
         title: 'Stadgar',
         description: 'Här hittar du information om samfällighetens stadgar',
         modules: [
           this.getModule('stadgarHero'),
-          this.getArticle('stadgarArticle')
-        ]
+          this.getArticle('stadgarArticle'),
+        ],
       },
       staddagar: {
         title: 'Städdagar och Grönområden',
@@ -85,23 +85,23 @@ export class ContentService {
           this.getArticle('stadDagarOneArticle'),
           this.getModule('omradesansvarigTable'),
           this.getArticle('stadDagarTwoArticle'),
-        ]
+        ],
       },
       parkeringgarage: {
         title: 'Parkering, Garage & Vägar',
         description: 'Här hittar du information om vägar, parkeringsplatser och samfällighetens garage samt snöröjningskartor',
         modules: [
           this.getModule('parkeringGarageHero'),
-          this.getArticle('parkeringGarageArticle')
-        ]
+          this.getArticle('parkeringGarageArticle'),
+        ],
       },
       tvfiber: {
         title: 'TV och Fiber',
         description: 'Här hittar du information om TV och fiber',
         modules: [
           this.getModule('tvHero'),
-          this.getArticle('tvArticle')
-        ]
+          this.getArticle('tvArticle'),
+        ],
       },
       dokument: {
         title: 'Dokument',
@@ -110,21 +110,21 @@ export class ContentService {
           this.getModule('dokumentHero'),
           this.getModule('files'),
           this.getModule('infobrev'),
-        ]
+        ],
       },
       privacy: {
         title: 'Privacy',
         description: 'Privacy policy',
         modules: [
-          this.getArticle('privacyArticle')
-        ]
+          this.getArticle('privacyArticle'),
+        ],
       },
       cookies: {
         title: 'Cookies',
         description: 'Cookies',
         modules: [
-          this.getArticle('cookiesArticle')
-        ]
+          this.getArticle('cookiesArticle'),
+        ],
       }, 
       test: {
         title: 'Test',
@@ -138,10 +138,10 @@ export class ContentService {
           this.getModule('files'),
           this.getModule('infobrev'),
           this.getArticle('reglerArticle'),
-          this.getModule('styrelsenContactTable')
-        ]
-      }                                   
-    }
+          this.getModule('styrelsenContactTable'),
+        ],
+      },                                 
+    };
     return data[id];
   }
 
@@ -154,44 +154,44 @@ export class ContentService {
           categoryItems: [
             {
               title: 'Nyheter / Om föreningen',
-              link: 'start'
+              link: 'start',
             },
             {
               title: 'Styrelsen / Föreningsfakta',
-              link: 'styrelsen'
+              link: 'styrelsen',
             },
             {
               title: 'Regler',
-              link: 'regler'
+              link: 'regler',
             },
             {
               title: 'Stadgar',
-              link: 'stadgar'
-            }
-          ]
+              link: 'stadgar',
+            },
+          ],
         },
         {
           categoryTitle: 'Samfälligheten',
           categoryItems: [
             {
               title: 'Städdagar / Grönområden',
-              link: 'staddagar'
+              link: 'staddagar',
             },
             {
               title: 'Parkering, Garage / Vägar',
-              link: 'parkeringgarage'
+              link: 'parkeringgarage',
             },
             {
               title: 'TV / Fiber',
-              link: 'tvfiber'
+              link: 'tvfiber',
             },
             {
               title: 'Dokument',
-              link: 'dokument'
-            }          
-          ]
-        }      
-      ]
+              link: 'dokument',
+            },    
+          ],
+        },      
+      ],
     };
   } // menu
 
@@ -211,8 +211,8 @@ export class ContentService {
             href: '/',
             type: 'internal'
           },
-          disableScrollDown: true       
-        }
+          disableScrollDown: true,       
+        },
       },      
       startHero: {
         type: 'hero',
@@ -230,9 +230,9 @@ export class ContentService {
           linkTwo: {
             text: 'Nyheter',
             href: '#down',
-            type: 'anchor'
+            type: 'anchor',
           },                 
-        }
+        },
       },
       styrelsenHero: {
         type: 'hero',
@@ -243,7 +243,7 @@ export class ContentService {
           image: './assets/images/image19.jpg',
           version: 'light',
           size: 'medium',           
-        }
+        },
       },
       reglerHero: {
         type: 'hero',
@@ -253,7 +253,7 @@ export class ContentService {
           image: './assets/images/image3.jpg',
           version: 'light',
           size: 'medium',           
-        }
+        },
       }, 
       stadgarHero: {
         type: 'hero',
@@ -263,7 +263,7 @@ export class ContentService {
           image: './assets/images/image10.jpg',
           version: 'light',
           size: 'medium',           
-        }
+        },
       },          
       stadDagarHero: {
         type: 'hero',
@@ -273,7 +273,7 @@ export class ContentService {
           image: './assets/images/image8.jpg',
           version: 'light',
           size: 'medium',           
-        }
+        },
       },
       parkeringGarageHero: {
         type: 'hero',
@@ -283,7 +283,7 @@ export class ContentService {
           image: './assets/images/image7.jpg',
           version: 'light',
           size: 'medium',           
-        }
+        },
       }, 
       tvHero: {
         type: 'hero',
@@ -293,7 +293,7 @@ export class ContentService {
           image: './assets/images/image11.jpg',
           version: 'light',
           size: 'medium',           
-        }
+        },
       },     
       dokumentHero: {
         type: 'hero',
@@ -304,7 +304,7 @@ export class ContentService {
           image: './assets/images/image13.jpg',
           version: 'light',
           size: 'medium',           
-        }
+        },
       },  
       styrelsenContactTable: {
         type: 'contactTable',
@@ -315,40 +315,40 @@ export class ContentService {
               function: 'Ordförande',
               name: 'Lars Hermanson',
               address: 'Billdals Aspväg 38',
-              phone: '031 91 32 82 '
+              phone: '031 91 32 82 ',
             },
             {
               function: 'Kassör',
               name: 'Gabriella Barta Söderqvist	',
               address: 'Billdals Aspväg 70',
-              phone: '031 91 20 19'  
+              phone: '031 91 20 19', 
             },
             {
               function: 'Sekreterare',
               name: 'Sara Danestedt',
               address: 'Billdals Aspväg 110',
-              phone: '031 91 48 16'
+              phone: '031 91 48 16',
             },
             {
               function: 'Ledamot',
               name: 'Kristoffer Sthen',
               address: 'Lindåsvägen 68',
-              phone: '0723 71 75 03'
+              phone: '0723 71 75 03',
             },
             {
               function: 'Ledamot',
               name: 'Mikael Forsman',
               address: 'Billdals Aspväg 62',
-              phone: '031 91 47 11'
+              phone: '031 91 47 11',
             },
             {
               function: 'Suppleant',
               name: 'Jonas Jävert',
               address: 'Lindåsvägen 22',
-              phone: '0739 02 04 57'
-            }
-          ]
-        }
+              phone: '0739 02 04 57',
+            },
+          ],
+        },
       },  
       omradesansvarigTable: {
         type: 'contactTable',
@@ -363,12 +363,12 @@ export class ContentService {
             {
               function: 'Område 2',
               name: 'Lena Larsson / Linda Vendelstrand Gardelin',
-              address: 'LV 50 / LV60  '
+              address: 'LV 50 / LV60  ',
             },
             {
               function: 'Område 3',
               name: 'Björn Töpel',
-              address: 'Lindåsvägen 116'
+              address: 'Lindåsvägen 116',
             },
             {
               function: 'Område 4',
@@ -378,20 +378,20 @@ export class ContentService {
             {
               function: 'Område 5',
               name: 'Lars Björklund',
-              address: 'Billdals Aspväg 86'
+              address: 'Billdals Aspväg 86',
             },
             {
               function: 'Område 6',
               name: 'Gabriella Barta Söderqvist',
-              address: 'Billdals Aspväg 70'
+              address: 'Billdals Aspväg 70',
             },
             {
               function: 'Område 7',
               name: 'Christian Conradi',
-              address: 'Billdals Aspväg 7'
-            }
-          ]
-        }
+              address: 'Billdals Aspväg 7',
+            },
+          ],
+        },
       },  
       startNews: {
         type: 'news',
@@ -402,54 +402,54 @@ export class ContentService {
               top: 'Maj 2018',
               header: 'Ny "Vippy"',
               text: 'Ny "vippy" gungbräda är på plats!',
-              image: './assets/images/image16.jpg'
+              image: './assets/images/image16.jpg',
             }, 
             {
               top: 'Maj 2018',
               header: 'Ny hemsida',
               text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida med ett minimum personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
-              image: './assets/images/image1.jpg'
+              image: './assets/images/image1.jpg',
             },      
             {
               top: '21-22 Oktober',
               header: 'Höstens städdagar',
               text: 'Höstens städdagar är planerade till 21-22 Oktober',
-              image: './assets/images/image8.jpg'
+              image: './assets/images/image8.jpg',
             },
             {
               top: 'Maj 2018',
               header: 'Årsmötesprotokoll',
               text: 'Protokollet från årsmötet är nu distribuerat. Protokollet kan även tillhandahålls av styrelsen på begäran.',
-              image: './assets/images/image9.jpg'
+              image: './assets/images/image9.jpg',
             },            
-          ]
-        }
+          ],
+        },
       },
       files: {
-          type: 'files',
-          files: {
-            header: 'Dokument',
-            files: [
-              {
-                header: 'Anläggningsbeslut',
-                text: 'Anläggningsbeslut för samfälligheten',
-              },
-              {
-                header: 'Fiber AV',
-                text: 'Ritning över fibernät Billdals Aspväg',
-              },
-              {
-                header: 'Fiber LV',
-                text: 'Ritning över fibernät Lindåsvägen',
-              }, 
-              {
-                header: 'Anfallspolicy',
-              },     
-              {
-                header: 'Mall motion till årsmötet',
-              },                          
-            ]
-          }
+        type: 'files',
+        files: {
+          header: 'Dokument',
+          files: [
+            {
+              header: 'Anläggningsbeslut',
+              text: 'Anläggningsbeslut för samfälligheten',
+            },
+            {
+              header: 'Fiber AV',
+              text: 'Ritning över fibernät Billdals Aspväg',
+            },
+            {
+              header: 'Fiber LV',
+              text: 'Ritning över fibernät Lindåsvägen',
+            }, 
+            {
+              header: 'Anfallspolicy',
+            },     
+            {
+              header: 'Mall motion till årsmötet',
+            },                          
+          ],
+        },
       },
       infobrev: {
         type: 'files',
@@ -471,8 +471,8 @@ export class ContentService {
             {
               header: 'Sommarbrev 2016',
             },    
-          ]
-        }
+          ],
+        },
       },
       startGallery: {
         type: 'gallery',
@@ -484,11 +484,11 @@ export class ContentService {
             { url: './assets/images/image5.jpg' },
             { url: './assets/images/image17.jpg' },
             { url: './assets/images/image18.jpg' },
-            { url: './assets/images/image19.jpg' }
-          ]
-        }
-      }        
-    } //modules
+            { url: './assets/images/image19.jpg' },
+          ],
+        },
+      } ,       
+    }; // modules
     return modules[id];
   }
 
@@ -514,8 +514,8 @@ export class ContentService {
       
             I området finns en landhockeybana som föreningen underhåller och alla områdets medlemmar är välkomna att använda. Respektera de ordningsregler som finns uppsatta invid banan.
             Tennisbanan ägs av Göteborgs stad och underhålls dessvärre dåligt. Det går dock att spela på banan.
-          `
-        }
+          `,
+        },
       },
       reglerArticle: {
         type: 'article',
@@ -600,8 +600,8 @@ export class ContentService {
             * Samfälligheten bekostar fällning och bortforsling av träd om fara för person eller egendom föreligger. Vid behov inkallas besiktningsman.
             * Fällning av andra orsaker skall alltid godkännas av styrelsen och bekostas av fastighetsägaren (även bortforsling av virke).
 
-          `
-        }
+          `,
+        },
       },
       faktaArticle:  {
         type: 'article',
@@ -626,8 +626,8 @@ export class ContentService {
           
           **Kontakt**	              
           styrelsen@ostralindas.se 
-          `
-        }
+          `,
+        },
       },
       stadgarArticle: {
         type: 'article',
@@ -709,8 +709,8 @@ export class ContentService {
             Ändringar gällande underhållsfond gjorda enligt årsmöte 1991 och 1992.
             
             Se även [Lag (1973:1150) om förvaltning av samfälligheter](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-19731150-om-forvaltning-av-samfalligheter_sfs-1973-1150)
-          `
-          }
+          `,
+        },
       },
 
       stadDagarOneArticle: {
@@ -742,8 +742,8 @@ export class ContentService {
 
           Om något går sönder ansvarar Du för att enheten repareras. Kostnaderna regleras av samfällighetens kassör om inte vårdslöshet kan påvisas.
 
-          `
-        }
+          `,
+        },
       },
         
       stadDagarTwoArticle: {
@@ -820,8 +820,8 @@ export class ContentService {
             #### Klippkarta söder
         
             ![Söder](./assets/images/klipp-soder.png)
-          `
-        }
+          `,
+        },
       },
       parkeringGarageArticle: {
         type: 'article',
@@ -869,8 +869,8 @@ export class ContentService {
         
             ### Snöröjning söder
             ![Söder](./assets/images/vag-soder.gif)
-          `
-        }
+          `,
+        },
       },
       tvArticle: {
         type: 'article',
@@ -938,8 +938,8 @@ export class ContentService {
           
           Köpte en routern (på media market 1690kr)som Ownit rekommenderad (ASUS66 någonting hette den som Ownit rekommenderad vi köpte den övre ASUS68) bad dem brygga en lanutgång i den fasta konverten ( detta sker via telefon från Ownit),  en nätverkskabel drogs från den fasta konverten till den nya routern. Valde en 15 meters kabel så att den nya routern kom i mitten av huset. Wow vilken skillnad det blev är riktigt nöjda nu.
           
-          `
-        }
+          `,
+        },
       },
       privacyArticle: {
         type: 'article',
@@ -950,22 +950,22 @@ export class ContentService {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ipsum at nunc pellentesque commodo. Phasellus mattis arcu eleifend sem ornare euismod. Ut porttitor leo eget nibh sodales, quis imperdiet purus sodales. Vestibulum consequat leo lectus, nec iaculis ex cursus a. Aliquam efficitur neque mattis nibh molestie elementum. Nam mattis ex molestie imperdiet tincidunt. Nullam dictum a nibh ut tempor. Aenean eleifend maximus neque dapibus scelerisque. Aenean feugiat ante felis, quis pharetra est dapibus sed. Integer maximus tempor euismod. Fusce magna magna, elementum vitae nulla id, placerat dapibus ligula. Duis vitae erat vitae sapien tincidunt ullamcorper. Aenean faucibus ac purus quis mattis. Maecenas ut est blandit, porttitor nunc sed, ullamcorper purus.
 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ipsum at nunc pellentesque commodo. Phasellus mattis arcu eleifend sem ornare euismod. Ut porttitor leo eget nibh sodales, quis imperdiet purus sodales. Vestibulum consequat leo lectus, nec iaculis ex cursus a. Aliquam efficitur neque mattis nibh molestie elementum. Nam mattis ex molestie imperdiet tincidunt. Nullam dictum a nibh ut tempor. Aenean eleifend maximus neque dapibus scelerisque. Aenean feugiat ante felis, quis pharetra est dapibus sed. Integer maximus tempor euismod. Fusce magna magna, elementum vitae nulla id, placerat dapibus ligula. Duis vitae erat vitae sapien tincidunt ullamcorper. Aenean faucibus ac purus quis mattis. Maecenas ut est blandit, porttitor nunc sed, ullamcorper purus.
-          `
-        }
+          `,
+        },
       },
       cookiesArticle: {
         type: 'article',
         article: {
           text: 
           `
-          ## Cookies
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ipsum at nunc pellentesque commodo. Phasellus mattis arcu eleifend sem ornare euismod. Ut porttitor leo eget nibh sodales, quis imperdiet purus sodales. Vestibulum consequat leo lectus, nec iaculis ex cursus a. Aliquam efficitur neque mattis nibh molestie elementum. Nam mattis ex molestie imperdiet tincidunt. Nullam dictum a nibh ut tempor. Aenean eleifend maximus neque dapibus scelerisque. Aenean feugiat ante felis, quis pharetra est dapibus sed. Integer maximus tempor euismod. Fusce magna magna, elementum vitae nulla id, placerat dapibus ligula. Duis vitae erat vitae sapien tincidunt ullamcorper. Aenean faucibus ac purus quis mattis. Maecenas ut est blandit, porttitor nunc sed, ullamcorper purus.
+            ## Cookies
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ipsum at nunc pellentesque commodo. Phasellus mattis arcu eleifend sem ornare euismod. Ut porttitor leo eget nibh sodales, quis imperdiet purus sodales. Vestibulum consequat leo lectus, nec iaculis ex cursus a. Aliquam efficitur neque mattis nibh molestie elementum. Nam mattis ex molestie imperdiet tincidunt. Nullam dictum a nibh ut tempor. Aenean eleifend maximus neque dapibus scelerisque. Aenean feugiat ante felis, quis pharetra est dapibus sed. Integer maximus tempor euismod. Fusce magna magna, elementum vitae nulla id, placerat dapibus ligula. Duis vitae erat vitae sapien tincidunt ullamcorper. Aenean faucibus ac purus quis mattis. Maecenas ut est blandit, porttitor nunc sed, ullamcorper purus.
 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ipsum at nunc pellentesque commodo. Phasellus mattis arcu eleifend sem ornare euismod. Ut porttitor leo eget nibh sodales, quis imperdiet purus sodales. Vestibulum consequat leo lectus, nec iaculis ex cursus a. Aliquam efficitur neque mattis nibh molestie elementum. Nam mattis ex molestie imperdiet tincidunt. Nullam dictum a nibh ut tempor. Aenean eleifend maximus neque dapibus scelerisque. Aenean feugiat ante felis, quis pharetra est dapibus sed. Integer maximus tempor euismod. Fusce magna magna, elementum vitae nulla id, placerat dapibus ligula. Duis vitae erat vitae sapien tincidunt ullamcorper. Aenean faucibus ac purus quis mattis. Maecenas ut est blandit, porttitor nunc sed, ullamcorper purus.
-          `
-          }
-        }      
-    }//articles
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque ipsum at nunc pellentesque commodo. Phasellus mattis arcu eleifend sem ornare euismod. Ut porttitor leo eget nibh sodales, quis imperdiet purus sodales. Vestibulum consequat leo lectus, nec iaculis ex cursus a. Aliquam efficitur neque mattis nibh molestie elementum. Nam mattis ex molestie imperdiet tincidunt. Nullam dictum a nibh ut tempor. Aenean eleifend maximus neque dapibus scelerisque. Aenean feugiat ante felis, quis pharetra est dapibus sed. Integer maximus tempor euismod. Fusce magna magna, elementum vitae nulla id, placerat dapibus ligula. Duis vitae erat vitae sapien tincidunt ullamcorper. Aenean faucibus ac purus quis mattis. Maecenas ut est blandit, porttitor nunc sed, ullamcorper purus.
+            `,
+          },
+        },      
+    }; // articles
     return articles[id];
   }
-} //contentService
+} // contentService

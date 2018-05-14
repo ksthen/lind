@@ -1,10 +1,18 @@
 
-.gallery-item {
+.gallery-image {
     border-left: 1px solid white;
     border-bottom: 1px solid white;
 }
 
-.bg-secondary .gallery-item {
+.bg-secondary .gallery-image {
     border-left: 1px solid #e9ecef;
     border-bottom: 1px solid #e9ecef;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.gallery-image {
+    display: block;
 }

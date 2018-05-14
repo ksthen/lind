@@ -6,7 +6,7 @@ import { Title, Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-not-found',
   templateUrl: './not-found.component.html',
-  styleUrls: ['./not-found.component.scss']
+  styleUrls: ['./not-found.component.scss'],
 })
 export class NotFoundComponent implements OnInit {
 
@@ -18,8 +18,8 @@ export class NotFoundComponent implements OnInit {
     private metaService: Meta) { }
 
   ngOnInit() {
-      this.page = this.cs.getData('notFound');
-      this.titleService.setTitle('Östra Lindås Samfällighet | ' + this.page.title);
-      this.metaService.addTag({name: 'robots', content: '"noindex,nofollow'});
+    this.page = this.cs.getData('notFound');
+    this.titleService.setTitle('Östra Lindås Samfällighet | ' + this.page.title);
+    this.metaService.addTag({ name: 'robots', content: '"noindex,nofollow' });
   }
 }

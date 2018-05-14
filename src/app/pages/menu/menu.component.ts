@@ -8,9 +8,7 @@ import { Location } from '@angular/common';
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
-  animations: [
-    slideInAnimation
-  ]
+  animations: [slideInAnimation],
 })
 export class MenuComponent implements OnInit {
 

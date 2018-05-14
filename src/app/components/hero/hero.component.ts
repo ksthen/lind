@@ -18,14 +18,14 @@ export interface Hero {
 interface Link {
   text: string;
   href: string;
-  type: string; //internal, anchor, external
+  type: string; // internal, anchor, external
 }
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
-  animations: [ heroAnimations ]
+  animations: [heroAnimations],
 })
 export class HeroComponent implements OnInit {
 
@@ -39,8 +39,8 @@ export class HeroComponent implements OnInit {
   scrollTo(item: string) {
     if (isPlatformBrowser(this.platformId)) {
       const id = document.querySelector(item);
-      if (id){
-          id.scrollIntoView({ block: 'start', behavior: 'smooth'});
+      if (id) {
+        id.scrollIntoView({ block: 'start', behavior: 'smooth' });
       }
     }
   }
