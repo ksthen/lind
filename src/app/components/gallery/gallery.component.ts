@@ -7,7 +7,7 @@ import {
   HostListener, 
   Inject,
   PLATFORM_ID} from '@angular/core';
-import { fadeAnimation, galleryAnimation } from '../../app.animations';
+import { staggerFade } from '../../app.animations';
 import { isPlatformBrowser } from '@angular/common';
 
 export interface GalleryImage {
@@ -24,7 +24,7 @@ export interface Gallery {
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
-  animations: [galleryAnimation],
+  animations: [staggerFade],
 })
 export class GalleryComponent {
 

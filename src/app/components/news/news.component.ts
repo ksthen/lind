@@ -1,7 +1,7 @@
 import { 
     Component, OnInit, Input, HostListener, 
     ElementRef, PLATFORM_ID, Inject } from '@angular/core';
-import { fadeAnimation, galleryAnimation, newsAnimation } from '../../app.animations';
+import { staggerFade } from '../../app.animations';
 import { isPlatformBrowser } from '@angular/common';
 
 export interface News {
@@ -21,7 +21,7 @@ export interface NewsItem {
   selector: 'app-news',
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.scss'],
-  animations: [newsAnimation],
+  animations: [staggerFade],
 })
 export class NewsComponent implements OnInit {
 

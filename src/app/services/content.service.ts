@@ -30,7 +30,8 @@ export interface Data {
 
 export class ContentService {
   
-  constructor() { }
+  constructor() { 
+  }
 
   getData(id: string) {
     const data: Data = {

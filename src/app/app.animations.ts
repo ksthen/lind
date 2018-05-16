@@ -104,51 +104,16 @@ export const heroAnimations =
     ]),
   ]);
 
-export const fadeAnimation = 
-  trigger('fadeAnimation', [
+export const staggerFade = 
+  trigger('staggerFade', [
     transition('* => *', [
       query(
-        ':enter', 
-        style({ opacity: 0 }), 
-        { optional: true }),
-
-      query(
-        ':enter', 
-        stagger('40ms', [
-          animate('800ms ease', style('*')),   
-        ]),
-        { optional: true },
-      ),
-    ]),
-  ]);
-
-
-export const galleryAnimation = 
-  trigger('galleryAnimation', [
-    transition('* => *', [
-      query(
-        '.gallery-image',
+        '.fade',
         style({ opacity: 0 }),
       ),
       query(
-        '.gallery-image', 
-        stagger('40ms', [
-          animate('400ms', style('*')),
-        ]),
-        { optional: true }),
-    ]),    
-  ]);
-
-export const newsAnimation = 
-  trigger('newsAnimation', [
-    transition('* => *', [
-      query(
-        '.news-item',
-        style({ opacity: 0 }),
-      ),
-      query(
-        '.news-item', 
-        stagger('40ms', [
+        '.fade', 
+        stagger('200ms', [
           animate('400ms', style('*')),
         ]),
         { optional: true }),
