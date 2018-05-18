@@ -1,6 +1,4 @@
-import { Component, OnInit, Input, HostListener, Inject, 
-  PLATFORM_ID, ElementRef } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, Input } from '@angular/core';
 import { staggerFade } from '../../app.animations';
 
 export interface FileList {
@@ -20,39 +18,14 @@ export interface File {
   styleUrls: ['./file-list.component.scss'],
   animations: [staggerFade],
 })
+
 export class FileListComponent implements OnInit {
 
   @Input() files: FileList;
 
-
-  public state: string;
-
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    if (isPlatformBrowser(this.platformId)) {
-      const componentPosition = this.el.nativeElement.offsetTop;
-      const scrollPosition = window.pageYOffset;
-      const windowHeight = window.innerHeight;
-      const offset = 400;
-
-      if (scrollPosition + windowHeight - offset >= componentPosition) {
-        this.state = 'show';
-      } else if (scrollPosition + windowHeight - offset * 2 < componentPosition) {
-        this.state = 'hide';
-      }
-    }
-  }
-
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: any, 
-    private el: ElementRef) { }
+  constructor() { }
 
   ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      this.state = 'hide';
-    } else {
-      this.state = 'show';
-    }
   }
 
 }

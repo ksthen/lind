@@ -6,7 +6,8 @@ import {
     animate, 
     query,
     stagger,
-    group } from '@angular/animations';
+    group, 
+    animateChild} from '@angular/animations';
 
 export const slideInAnimation = 
 trigger('slideIn', [
@@ -105,17 +106,38 @@ export const heroAnimations =
   ]);
 
 export const staggerFade = 
-  trigger('staggerFade', [
+  trigger('animate', [
     transition('* => *', [
       query(
-        '.fade',
+        '.animate',
         style({ opacity: 0 }),
+        { optional: true },
       ),
       query(
-        '.fade', 
+        '.animate', 
         stagger('200ms', [
           animate('400ms', style('*')),
         ]),
-        { optional: true }),
+        { optional: true },
+      ),
+    ]),    
+  ]);
+
+
+export const staggerSlideFade = 
+  trigger('animate', [
+    transition('* => *', [
+      query(
+        '.animate',
+        style({ opacity: 0, transform: 'translateX(10px)' }),
+        { optional: true },
+      ),
+      query(
+        '.animate', 
+        stagger('200ms', [
+          animate('400ms', style('*')),    
+        ]),
+        { optional: true },
+      ),
     ]),    
   ]);

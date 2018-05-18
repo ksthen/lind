@@ -1,10 +1,10 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {RouterModule} from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MarkdownModule } from 'ngx-markdown'; 
-import {TransferHttpCacheModule} from '@nguniversal/common';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 import { StartComponent } from './pages/start/start.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ArticleComponent } from './components/article/article.component';
@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactTableComponent } from './components/contact-table/contact-table.component';
 import { ResponsiveImageComponent } from './components/responsive-image/responsive-image.component';
+import { ScrollAnimationDirective } from './directives/scroll-animation.directive';
 
 @NgModule({
   declarations: [
@@ -34,34 +35,35 @@ import { ResponsiveImageComponent } from './components/responsive-image/responsi
     MenuComponent,
     GalleryComponent,
     ContactTableComponent,
-    ResponsiveImageComponent
+    ResponsiveImageComponent,
+    ScrollAnimationDirective,
   ],
   imports: [
-    BrowserModule.withServerTransition({appId: 'my-app'}),
+    BrowserModule.withServerTransition({ appId: 'my-app' }),
     RouterModule.forRoot([
-      { path: '', component: StartComponent},
-      { path: 'start', component: StartComponent},
-      { path: 'styrelsen', component: StartComponent},
-      { path: 'regler', component: StartComponent},
-      { path: 'stadgar', component: StartComponent},
-      { path: 'staddagar', component: StartComponent},
-      { path: 'tvfiber', component: StartComponent},
-      { path: 'dokument', component: StartComponent},
-      { path: 'parkeringgarage', component: StartComponent},
-      { path: 'privacy', component: StartComponent},
-      { path: 'cookies', component: StartComponent},
-      { path: 'test', component: StartComponent},
-      { path: 'meny', component: MenuComponent},
-      { path: '**', component: NotFoundComponent }
+      { path: '', component: StartComponent },
+      { path: 'start', component: StartComponent },
+      { path: 'styrelsen', component: StartComponent },
+      { path: 'regler', component: StartComponent },
+      { path: 'stadgar', component: StartComponent },
+      { path: 'staddagar', component: StartComponent },
+      { path: 'tvfiber', component: StartComponent },
+      { path: 'dokument', component: StartComponent },
+      { path: 'parkeringgarage', component: StartComponent },
+      { path: 'privacy', component: StartComponent },
+      { path: 'cookies', component: StartComponent },
+      { path: 'test', component: StartComponent },
+      { path: 'meny', component: MenuComponent },
+      { path: '**', component: NotFoundComponent },
     ]),
     MarkdownModule.forRoot(),
     TransferHttpCacheModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   entryComponents: [
-    MenuComponent
+    MenuComponent,
   ],
   providers: [ContentService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

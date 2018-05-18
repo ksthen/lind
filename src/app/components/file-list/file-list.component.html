@@ -1,9 +1,9 @@
-<div class="container pt-4 pb-5" *ngIf="files" [@staggerFade]="state">
+<div class="container pt-4 pb-5" *ngIf="files">
   <div class="row">
     <div class="col-sm-12">
         <h2>{{ files.header }}</h2>
     </div> 
-    <div class="col-sm-12 col-md-6 col-lg-4 fade" *ngFor="let f of files.files">
+    <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let f of files.files">
         <hr>    
         <a class="media text-dark" [href]="f.url">  
             

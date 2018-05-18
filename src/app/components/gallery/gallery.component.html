@@ -2,10 +2,10 @@
   class="container-fluid" 
   *ngIf="gallery" 
   [ngClass]="{'bg-secondary': gallery.version === 'muted'}"
-  [@staggerFade]="state">
+  appScrollAnimation [offset]="400">
   <div class="gallery-container">
     <div class="row no-gutters pt-4 pb-4">
-        <div class="col-6 col-sm-4 fade" *ngFor="let g of gallery.images">
+        <div class="col-6 col-sm-4 animate" *ngFor="let g of gallery.images">
             <app-responsive-image 
                 [image]="g.url" 
                 [minWidth]="'640px'"
