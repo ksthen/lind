@@ -635,16 +635,13 @@ var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! ./file-list.component */ "./src/app/components/file-list/file-list.component.ts");
 var styles_FileListComponent = [i0.styles];
-var RenderType_FileListComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_FileListComponent, data: { "animation": [{ type: 7, name: "staggerFade", definitions: [{ type: 1, expr: "* => *", animation: [{ type: 11, selector: ".fade", animation: { type: 6, styles: { opacity: 0 }, offset: null }, options: null }, { type: 11, selector: ".fade", animation: { type: 12, timings: "200ms", animation: [{ type: 4, styles: { type: 6, styles: "*", offset: null }, timings: "400ms" }] }, options: { optional: true } }], options: null }], options: {} }] } });
+var RenderType_FileListComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_FileListComponent, data: {} });
 exports.RenderType_FileListComponent = RenderType_FileListComponent;
-function View_FileListComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "col-sm-12 col-md-6 col-lg-4 fade"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 6, "a", [["class", "media text-dark"]], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "button", [["class", "btn btn-primary align-self-middle btn-circle mr-3 d-flex justify-content-center align-items-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, ":svg:svg", [["viewBox", "0 0 384 512"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, ":svg:path", [["d", "M224 136V0H24C10.3 0 0 10.8 0 24v464c0 13.3 10.5 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-13 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "div", [["class", "media-body pt-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(8, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.url; _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.header; _ck(_v, 8, 0, currVal_1); }); }
-function View_FileListComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "container pt-4 pb-5"]], [[24, "@staggerFade", 0]], null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FileListComponent_2)), i1.ɵdid(6, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.files.files; _ck(_v, 6, 0, currVal_2); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.state; _ck(_v, 0, 0, currVal_0); var currVal_1 = _co.files.header; _ck(_v, 4, 0, currVal_1); }); }
+function View_FileListComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "col-sm-12 col-md-6 col-lg-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 6, "a", [["class", "media text-dark"]], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "button", [["class", "btn btn-primary align-self-middle btn-circle mr-3 d-flex justify-content-center align-items-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, ":svg:svg", [["viewBox", "0 0 384 512"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, ":svg:path", [["d", "M224 136V0H24C10.3 0 0 10.8 0 24v464c0 13.3 10.5 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-13 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "div", [["class", "media-body pt-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(8, null, ["", ""]))], null, function (_ck, _v) { var currVal_0 = _v.context.$implicit.url; _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.header; _ck(_v, 8, 0, currVal_1); }); }
+function View_FileListComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "container pt-4 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FileListComponent_2)), i1.ɵdid(6, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.files.files; _ck(_v, 6, 0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.files.header; _ck(_v, 4, 0, currVal_0); }); }
 function View_FileListComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_FileListComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.files; _ck(_v, 1, 0, currVal_0); }, null); }
 exports.View_FileListComponent_0 = View_FileListComponent_0;
-function View_FileListComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-file-list", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 1).checkScroll($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, View_FileListComponent_0, RenderType_FileListComponent)), i1.ɵdid(1, 114688, null, 0, i3.FileListComponent, [i1.PLATFORM_ID, i1.ElementRef], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_FileListComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-file-list", [], null, null, null, View_FileListComponent_0, RenderType_FileListComponent)), i1.ɵdid(1, 114688, null, 0, i3.FileListComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_FileListComponent_Host_0 = View_FileListComponent_Host_0;
 var FileListComponentNgFactory = i1.ɵccf("app-file-list", i3.FileListComponent, View_FileListComponent_Host_0, { files: "files" }, {}, []);
 exports.FileListComponentNgFactory = FileListComponentNgFactory;
@@ -685,34 +682,10 @@ exports.styles = styles;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var common_1 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var FileListComponent = /** @class */ (function () {
-    function FileListComponent(platformId, el) {
-        this.platformId = platformId;
-        this.el = el;
+    function FileListComponent() {
     }
-    FileListComponent.prototype.checkScroll = function () {
-        if (common_1.isPlatformBrowser(this.platformId)) {
-            var componentPosition = this.el.nativeElement.offsetTop;
-            var scrollPosition = window.pageYOffset;
-            var windowHeight = window.innerHeight;
-            var offset = 400;
-            if (scrollPosition + windowHeight - offset >= componentPosition) {
-                this.state = 'show';
-            }
-            else if (scrollPosition + windowHeight - offset * 2 < componentPosition) {
-                this.state = 'hide';
-            }
-        }
-    };
-    FileListComponent.prototype.ngOnInit = function () {
-        if (common_1.isPlatformBrowser(this.platformId)) {
-            this.state = 'hide';
-        }
-        else {
-            this.state = 'show';
-        }
-    };
+    FileListComponent.prototype.ngOnInit = function () { };
     return FileListComponent;
 }());
 exports.FileListComponent = FileListComponent;
@@ -1205,7 +1178,7 @@ function View_FooterComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0
         ad = (pd_1 && ad);
     } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(3, 1), (_l()(), i1.ɵted(4, null, ["", ""]))], function (_ck, _v) { var currVal_2 = ("/" + _ck(_v, 3, 0, _v.context.$implicit.link)); _ck(_v, 2, 0, currVal_2); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_3 = _v.context.$implicit.title; _ck(_v, 4, 0, currVal_3); }); }
 function View_FooterComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "col-sm-12 col-md-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, ["", ""])), (_l()(), i1.ɵeld(3, 0, null, null, 2, "ul", [["class", "list-unstyled"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_3)), i1.ɵdid(5, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var currVal_1 = _v.context.$implicit.categoryItems; _ck(_v, 5, 0, currVal_1); }, function (_ck, _v) { var currVal_0 = _v.context.$implicit.categoryTitle; _ck(_v, 2, 0, currVal_0); }); }
-function View_FooterComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i3.NgStyle, [i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { ngStyle: [0, "ngStyle"] }, null), i1.ɵpod(2, { "background-image": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 4, "div", [["class", "footer-overlay pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [["class", "container pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_2)), i1.ɵdid(7, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _ck(_v, 2, 0, (("url(" + _co.menu.background) + ")")); _ck(_v, 1, 0, currVal_0); var currVal_1 = _co.menu.categories; _ck(_v, 7, 0, currVal_1); }, null); }
+function View_FooterComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["class", "container-fluid"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i3.NgStyle, [i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { ngStyle: [0, "ngStyle"] }, null), i1.ɵpod(2, { "background-image": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 4, "div", [["class", "footer-overlay pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [["class", "container pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "row pt-5 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_2)), i1.ɵdid(7, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _ck(_v, 2, 0, (("url(" + _co.menu.background) + ")")); _ck(_v, 1, 0, currVal_0); var currVal_1 = _co.menu.categories; _ck(_v, 7, 0, currVal_1); }, null); }
 function View_FooterComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_FooterComponent_1)), i1.ɵdid(1, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 15, "div", [["class", "container-fluid bg-primary"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 14, "div", [["class", "pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 13, "div", [["class", "col text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 10, "p", [["class", "text-light mt-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 3, "a", [["class", "text-light"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 7).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
@@ -1517,10 +1490,7 @@ function View_StartComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0,
         ad = (pd_0 && ad);
     } return ad; }, i5.View_NewsComponent_0, i5.RenderType_NewsComponent)), i1.ɵdid(1, 114688, null, 0, i6.NewsComponent, [i1.PLATFORM_ID, i1.ElementRef], { news: [0, "news"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.news; _ck(_v, 1, 0, currVal_0); }, null); }
 function View_StartComponent_5(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-article", [], null, null, null, i7.View_ArticleComponent_0, i7.RenderType_ArticleComponent)), i1.ɵdid(1, 114688, null, 0, i8.ArticleComponent, [], { article: [0, "article"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.article; _ck(_v, 1, 0, currVal_0); }, null); }
-function View_StartComponent_6(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-file-list", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 1).checkScroll($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, i9.View_FileListComponent_0, i9.RenderType_FileListComponent)), i1.ɵdid(1, 114688, null, 0, i10.FileListComponent, [i1.PLATFORM_ID, i1.ElementRef], { files: [0, "files"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.files; _ck(_v, 1, 0, currVal_0); }, null); }
+function View_StartComponent_6(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-file-list", [], null, null, null, i9.View_FileListComponent_0, i9.RenderType_FileListComponent)), i1.ɵdid(1, 114688, null, 0, i10.FileListComponent, [], { files: [0, "files"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.files; _ck(_v, 1, 0, currVal_0); }, null); }
 function View_StartComponent_7(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gallery", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).checkScroll($event) !== false);
         ad = (pd_0 && ad);
@@ -1628,7 +1598,7 @@ exports.RenderType_TopBarComponent = RenderType_TopBarComponent;
 function View_TopBarComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "nav", [["class", "navbar navbar-light bg-light border-bottom box-shadow"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "a", [["class", "navbar-brand"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 2).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(3, 1), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["src", "./assets/logo.jpg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 3, "button", [["aria-expanded", "false"], ["aria-label", "Toggle navigation"], ["class", "navbar-toggler btn"], ["type", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+    } return ad; }, null, null)), i1.ɵdid(2, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(3, 1), (_l()(), i1.ɵeld(4, 0, null, null, 0, "img", [["src", "./assets/logo.gif"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 3, "button", [["aria-expanded", "false"], ["aria-label", "Toggle navigation"], ["class", "navbar-toggler btn"], ["type", "button"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 6).onClick() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), i1.ɵdid(6, 16384, null, 0, i2.RouterLink, [i2.Router, i2.ActivatedRoute, [8, null], i1.Renderer2, i1.ElementRef], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(7, 1), (_l()(), i1.ɵeld(8, 0, null, null, 0, "span", [["class", "navbar-toggler-icon"]], null, null, null, null, null))], function (_ck, _v) { var currVal_2 = _ck(_v, 3, 0, "/start"); _ck(_v, 2, 0, currVal_2); var currVal_3 = _ck(_v, 7, 0, "/meny"); _ck(_v, 6, 0, currVal_3); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 2).target; var currVal_1 = i1.ɵnov(_v, 2).href; _ck(_v, 1, 0, currVal_0, currVal_1); }); }
@@ -2254,7 +2224,7 @@ exports.LAZY_MODULE_MAP = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ksthen/Documents/Dev/lind/src/main.server.ts */"./src/main.server.ts");
+module.exports = __webpack_require__(/*! /Users/Kristoffer/Documents/Privat/Development/lind/src/main.server.ts */"./src/main.server.ts");
 
 
 /***/ }),
