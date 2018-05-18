@@ -1,8 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-<<<<<<< HEAD
 import { staggerFade } from '../../app.animations';
-=======
->>>>>>> 8ade07331e77b660e0677e78324afb88bf3a2eb4
 
 export interface FileList {
   header: string;
@@ -18,7 +15,7 @@ export interface File {
 @Component({
   selector: 'app-file-list',
   templateUrl: './file-list.component.html',
-  styleUrls: ['./file-list.component.scss']
+  styleUrls: ['./file-list.component.scss'],
 })
 
 export class FileListComponent implements OnInit {
@@ -27,11 +24,6 @@ export class FileListComponent implements OnInit {
 
   constructor() { }
 
-<<<<<<< HEAD
-  ngOnInit() {
-  }
-=======
   ngOnInit() {}
->>>>>>> 8ade07331e77b660e0677e78324afb88bf3a2eb4
 
 }

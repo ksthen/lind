@@ -714,20 +714,21 @@ var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! ../responsive-image/responsive-image.component.ngfactory */ "./src/app/components/responsive-image/responsive-image.component.ngfactory.js");
 var i3 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i4 = __webpack_require__(/*! ../responsive-image/responsive-image.component */ "./src/app/components/responsive-image/responsive-image.component.ts");
-var i5 = __webpack_require__(/*! ./gallery.component */ "./src/app/components/gallery/gallery.component.ts");
+var i5 = __webpack_require__(/*! ../../directives/scroll-animation.directive */ "./src/app/directives/scroll-animation.directive.ts");
+var i6 = __webpack_require__(/*! ./gallery.component */ "./src/app/components/gallery/gallery.component.ts");
 var styles_GalleryComponent = [i0.styles];
-var RenderType_GalleryComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_GalleryComponent, data: { "animation": [{ type: 7, name: "staggerFade", definitions: [{ type: 1, expr: "* => *", animation: [{ type: 11, selector: ".fade", animation: { type: 6, styles: { opacity: 0 }, offset: null }, options: null }, { type: 11, selector: ".fade", animation: { type: 12, timings: "200ms", animation: [{ type: 4, styles: { type: 6, styles: "*", offset: null }, timings: "400ms" }] }, options: { optional: true } }], options: null }], options: {} }] } });
+var RenderType_GalleryComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_GalleryComponent, data: { "animation": [{ type: 7, name: "animate", definitions: [{ type: 1, expr: "* => *", animation: [{ type: 11, selector: ".animate", animation: { type: 6, styles: { opacity: 0 }, offset: null }, options: { optional: true } }, { type: 11, selector: ".animate", animation: { type: 12, timings: "200ms", animation: [{ type: 4, styles: { type: 6, styles: "*", offset: null }, timings: "400ms" }] }, options: { optional: true } }], options: null }], options: {} }] } });
 exports.RenderType_GalleryComponent = RenderType_GalleryComponent;
-function View_GalleryComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "div", [["class", "col-6 col-sm-4 fade"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "app-responsive-image", [["class", "gallery-image image-fulid"]], null, null, null, i2.View_ResponsiveImageComponent_0, i2.RenderType_ResponsiveImageComponent)), i1.ɵdid(2, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵdid(3, 114688, null, 0, i4.ResponsiveImageComponent, [], { image: [0, "image"], minWidth: [1, "minWidth"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "gallery-image image-fulid"; var currVal_1 = _co.state; _ck(_v, 2, 0, currVal_0, currVal_1); var currVal_2 = _v.context.$implicit.url; var currVal_3 = "640px"; _ck(_v, 3, 0, currVal_2, currVal_3); }, null); }
-function View_GalleryComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "container-fluid"]], [[24, "@staggerFade", 0]], null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "bg-secondary": 0 }), (_l()(), i1.ɵeld(3, 0, null, null, 3, "div", [["class", "gallery-container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 2, "div", [["class", "row no-gutters pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_2)), i1.ɵdid(6, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_1 = "container-fluid"; var currVal_2 = _ck(_v, 2, 0, (_co.gallery.version === "muted")); _ck(_v, 1, 0, currVal_1, currVal_2); var currVal_3 = _co.gallery.images; _ck(_v, 6, 0, currVal_3); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.state; _ck(_v, 0, 0, currVal_0); }); }
+function View_GalleryComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "div", [["class", "col-6 col-sm-4 animate"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 2, "app-responsive-image", [["class", "gallery-image image-fulid"]], null, null, null, i2.View_ResponsiveImageComponent_0, i2.RenderType_ResponsiveImageComponent)), i1.ɵdid(2, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵdid(3, 114688, null, 0, i4.ResponsiveImageComponent, [], { image: [0, "image"], minWidth: [1, "minWidth"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "gallery-image image-fulid"; var currVal_1 = _co.state; _ck(_v, 2, 0, currVal_0, currVal_1); var currVal_2 = _v.context.$implicit.url; var currVal_3 = "640px"; _ck(_v, 3, 0, currVal_2, currVal_3); }, null); }
+function View_GalleryComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 7, "div", [["appScrollAnimation", ""], ["class", "container-fluid"]], [[24, "@animate", 0]], [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
+        var pd_0 = (i1.ɵnov(_v, 3).checkScroll($event) !== false);
+        ad = (pd_0 && ad);
+    } return ad; }, null, null)), i1.ɵdid(1, 278528, null, 0, i3.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(2, { "bg-secondary": 0 }), i1.ɵdid(3, 81920, null, 0, i5.ScrollAnimationDirective, [i1.PLATFORM_ID, i1.ElementRef], { offset: [0, "offset"] }, null), (_l()(), i1.ɵeld(4, 0, null, null, 3, "div", [["class", "gallery-container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 2, "div", [["class", "row no-gutters pt-4 pb-4"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_2)), i1.ɵdid(7, 802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_1 = "container-fluid"; var currVal_2 = _ck(_v, 2, 0, (_co.gallery.version === "muted")); _ck(_v, 1, 0, currVal_1, currVal_2); var currVal_3 = 400; _ck(_v, 3, 0, currVal_3); var currVal_4 = _co.gallery.images; _ck(_v, 7, 0, currVal_4); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 3).animationTrigger; _ck(_v, 0, 0, currVal_0); }); }
 function View_GalleryComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_GalleryComponent_1)), i1.ɵdid(1, 16384, null, 0, i3.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.gallery; _ck(_v, 1, 0, currVal_0); }, null); }
 exports.View_GalleryComponent_0 = View_GalleryComponent_0;
-function View_GalleryComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gallery", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 1).checkScroll($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, View_GalleryComponent_0, RenderType_GalleryComponent)), i1.ɵdid(1, 114688, null, 0, i5.GalleryComponent, [i1.PLATFORM_ID, i1.ElementRef], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+function View_GalleryComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gallery", [], null, null, null, View_GalleryComponent_0, RenderType_GalleryComponent)), i1.ɵdid(1, 114688, null, 0, i6.GalleryComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_GalleryComponent_Host_0 = View_GalleryComponent_Host_0;
-var GalleryComponentNgFactory = i1.ɵccf("app-gallery", i5.GalleryComponent, View_GalleryComponent_Host_0, { gallery: "gallery" }, {}, []);
+var GalleryComponentNgFactory = i1.ɵccf("app-gallery", i6.GalleryComponent, View_GalleryComponent_Host_0, { gallery: "gallery" }, {}, []);
 exports.GalleryComponentNgFactory = GalleryComponentNgFactory;
 
 
@@ -765,34 +766,10 @@ exports.styles = styles;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var common_1 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var GalleryComponent = /** @class */ (function () {
-    function GalleryComponent(platformId, el) {
-        this.platformId = platformId;
-        this.el = el;
+    function GalleryComponent() {
     }
-    GalleryComponent.prototype.checkScroll = function () {
-        if (common_1.isPlatformBrowser(this.platformId)) {
-            var componentPosition = this.el.nativeElement.offsetTop;
-            var scrollPosition = window.pageYOffset;
-            var windowHeight = window.innerHeight;
-            var offset = 50;
-            if (scrollPosition + windowHeight - offset >= componentPosition) {
-                this.state = 'show';
-            }
-            else if (scrollPosition + windowHeight < componentPosition) {
-                this.state = 'hide';
-            }
-        }
-    };
     GalleryComponent.prototype.ngOnInit = function () {
-        if (common_1.isPlatformBrowser(this.platformId)) {
-            this.state = 'hide';
-        }
-        else {
-            this.state = 'show';
-        }
     };
     return GalleryComponent;
 }());
@@ -939,24 +916,25 @@ var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var i2 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var i3 = __webpack_require__(/*! ../responsive-image/responsive-image.component.ngfactory */ "./src/app/components/responsive-image/responsive-image.component.ngfactory.js");
 var i4 = __webpack_require__(/*! ../responsive-image/responsive-image.component */ "./src/app/components/responsive-image/responsive-image.component.ts");
-var i5 = __webpack_require__(/*! ./news.component */ "./src/app/components/news/news.component.ts");
+var i5 = __webpack_require__(/*! ../../directives/scroll-animation.directive */ "./src/app/directives/scroll-animation.directive.ts");
+var i6 = __webpack_require__(/*! ./news.component */ "./src/app/components/news/news.component.ts");
 var styles_NewsComponent = [i0.styles];
-var RenderType_NewsComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_NewsComponent, data: { "animation": [{ type: 7, name: "staggerFade", definitions: [{ type: 1, expr: "* => *", animation: [{ type: 11, selector: ".fade", animation: { type: 6, styles: { opacity: 0 }, offset: null }, options: null }, { type: 11, selector: ".fade", animation: { type: 12, timings: "200ms", animation: [{ type: 4, styles: { type: 6, styles: "*", offset: null }, timings: "400ms" }] }, options: { optional: true } }], options: null }], options: {} }] } });
+var RenderType_NewsComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_NewsComponent, data: { "animation": [{ type: 7, name: "animate", definitions: [{ type: 1, expr: "* => *", animation: [{ type: 11, selector: ".animate", animation: { type: 6, styles: { opacity: 0, transform: "translateX(10px)" }, offset: null }, options: { optional: true } }, { type: 11, selector: ".animate", animation: { type: 12, timings: "200ms", animation: [{ type: 4, styles: { type: 6, styles: "*", offset: null }, timings: "400ms" }] }, options: { optional: true } }], options: null }], options: {} }] } });
 exports.RenderType_NewsComponent = RenderType_NewsComponent;
-function View_NewsComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 11, "div", [["class", "row align-items-center fade"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-sm-12 col-md-4 pt-3 pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "app-responsive-image", [["class", "img-fluid"]], null, null, null, i3.View_ResponsiveImageComponent_0, i3.RenderType_ResponsiveImageComponent)), i1.ɵdid(4, 114688, null, 0, i4.ResponsiveImageComponent, [], { image: [0, "image"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 6, "div", [["class", "col-sm-12 col-md-8"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(9, null, ["", ""])), (_l()(), i1.ɵeld(10, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(11, null, ["", ""]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = "row align-items-center fade"; var currVal_1 = _co.state; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_2 = _v.context.$implicit.image; _ck(_v, 4, 0, currVal_2); }, function (_ck, _v) { var currVal_3 = _v.context.$implicit.top; _ck(_v, 7, 0, currVal_3); var currVal_4 = _v.context.$implicit.header; _ck(_v, 9, 0, currVal_4); var currVal_5 = _v.context.$implicit.text; _ck(_v, 11, 0, currVal_5); }); }
+function View_NewsComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 11, "div", [["class", "row align-items-center animate"]], null, null, null, null, null)), i1.ɵdid(1, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-sm-12 col-md-4 pt-3 pb-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "app-responsive-image", [["class", "img-fluid"]], null, null, null, i3.View_ResponsiveImageComponent_0, i3.RenderType_ResponsiveImageComponent)), i1.ɵdid(4, 114688, null, 0, i4.ResponsiveImageComponent, [], { image: [0, "image"] }, null), (_l()(), i1.ɵeld(5, 0, null, null, 6, "div", [["class", "col-sm-12 col-md-8"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), i1.ɵted(7, null, ["", ""])), (_l()(), i1.ɵeld(8, 0, null, null, 1, "h3", [], null, null, null, null, null)), (_l()(), i1.ɵted(9, null, ["", ""])), (_l()(), i1.ɵeld(10, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(11, null, ["", ""]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = "row align-items-center animate"; var currVal_1 = _co.state; _ck(_v, 1, 0, currVal_0, currVal_1); var currVal_2 = _v.context.$implicit.image; _ck(_v, 4, 0, currVal_2); }, function (_ck, _v) { var currVal_3 = _v.context.$implicit.top; _ck(_v, 7, 0, currVal_3); var currVal_4 = _v.context.$implicit.header; _ck(_v, 9, 0, currVal_4); var currVal_5 = _v.context.$implicit.text; _ck(_v, 11, 0, currVal_5); }); }
 function View_NewsComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 5, "div", [["class", "row mb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "div", [["class", "col-sm-12 text-center mt-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 3, "button", [["class", "btn btn-primary"]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.showAllNews() !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), i1.ɵdid(3, 278528, null, 0, i2.NgClass, [i1.IterableDiffers, i1.KeyValueDiffers, i1.ElementRef, i1.Renderer2], { klass: [0, "klass"], ngClass: [1, "ngClass"] }, null), i1.ɵpod(4, { "disabled": 0 }), (_l()(), i1.ɵted(-1, null, ["Ladda fler"]))], function (_ck, _v) { var _co = _v.component; var currVal_0 = "btn btn-primary"; var currVal_1 = _ck(_v, 4, 0, (_co.displayNews === _co.news.newsItems)); _ck(_v, 3, 0, currVal_0, currVal_1); }, null); }
-function View_NewsComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "container pt-4 pb-4"]], [[24, "@staggerFade", 0]], null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewsComponent_2)), i1.ɵdid(6, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewsComponent_3)), i1.ɵdid(8, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_2 = _co.displayNews; _ck(_v, 6, 0, currVal_2); var currVal_3 = (_co.displayNews.length !== _co.news.newsItems.length); _ck(_v, 8, 0, currVal_3); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.state; _ck(_v, 0, 0, currVal_0); var currVal_1 = _co.news.header; _ck(_v, 4, 0, currVal_1); }); }
-function View_NewsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewsComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.displayNews; _ck(_v, 1, 0, currVal_0); }, null); }
-exports.View_NewsComponent_0 = View_NewsComponent_0;
-function View_NewsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-news", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
+function View_NewsComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 9, "div", [["appScrollAnimation", ""], ["class", "container pt-4 pb-4"]], [[24, "@animate", 0], [24, "@animate", 0]], [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
         var pd_0 = (i1.ɵnov(_v, 1).checkScroll($event) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, View_NewsComponent_0, RenderType_NewsComponent)), i1.ɵdid(1, 114688, null, 0, i5.NewsComponent, [i1.PLATFORM_ID, i1.ElementRef], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+    } return ad; }, null, null)), i1.ɵdid(1, 81920, null, 0, i5.ScrollAnimationDirective, [i1.PLATFORM_ID, i1.ElementRef], { offset: [0, "offset"] }, null), (_l()(), i1.ɵeld(2, 0, null, null, 3, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "div", [["class", "col"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(5, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewsComponent_2)), i1.ɵdid(7, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewsComponent_3)), i1.ɵdid(9, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_2 = 400; _ck(_v, 1, 0, currVal_2); var currVal_4 = _co.displayNews; _ck(_v, 7, 0, currVal_4); var currVal_5 = (_co.displayNews.length !== _co.news.newsItems.length); _ck(_v, 9, 0, currVal_5); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = undefined; var currVal_1 = i1.ɵnov(_v, 1).animationTrigger; _ck(_v, 0, 0, currVal_0, currVal_1); var currVal_3 = _co.news.header; _ck(_v, 5, 0, currVal_3); }); }
+function View_NewsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_NewsComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.displayNews; _ck(_v, 1, 0, currVal_0); }, null); }
+exports.View_NewsComponent_0 = View_NewsComponent_0;
+function View_NewsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-news", [], null, null, null, View_NewsComponent_0, RenderType_NewsComponent)), i1.ɵdid(1, 114688, null, 0, i6.NewsComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_NewsComponent_Host_0 = View_NewsComponent_Host_0;
-var NewsComponentNgFactory = i1.ɵccf("app-news", i5.NewsComponent, View_NewsComponent_Host_0, { news: "news" }, {}, []);
+var NewsComponentNgFactory = i1.ɵccf("app-news", i6.NewsComponent, View_NewsComponent_Host_0, { news: "news" }, {}, []);
 exports.NewsComponentNgFactory = NewsComponentNgFactory;
 
 
@@ -995,43 +973,19 @@ exports.styles = styles;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var common_1 = __webpack_require__(/*! @angular/common */ "@angular/common");
 var NewsComponent = /** @class */ (function () {
-    function NewsComponent(platformId, el) {
-        this.platformId = platformId;
-        this.el = el;
+    function NewsComponent() {
     }
-    NewsComponent.prototype.checkScroll = function () {
-        if (common_1.isPlatformBrowser(this.platformId)) {
-            var componentPosition = this.el.nativeElement.offsetTop;
-            var scrollPosition = window.pageYOffset;
-            var windowHeight = window.innerHeight;
-            var offset = 400;
-            if (scrollPosition + windowHeight - offset >= componentPosition) {
-                this.state = 'show';
-            }
-            else if (scrollPosition + windowHeight - offset * 2 < componentPosition) {
-                this.state = 'hide';
-            }
-        }
-    };
     NewsComponent.prototype.ngOnInit = function () {
         var _this = this;
         if (this.news.newsItems) {
             this.displayNews = this.news.newsItems.filter(function (item) { return _this.news.newsItems.indexOf(item) < 3; });
-        }
-        if (common_1.isPlatformBrowser(this.platformId)) {
-            this.state = 'hide';
-        }
-        else {
-            this.state = 'show';
         }
     };
     NewsComponent.prototype.showAllNews = function () {
         if (this.news.newsItems) {
             this.displayNews = this.news.newsItems;
         }
-        this.state = 'show';
     };
     return NewsComponent;
 }());
@@ -1141,6 +1095,53 @@ var ResponsiveImageComponent = /** @class */ (function () {
     return ResponsiveImageComponent;
 }());
 exports.ResponsiveImageComponent = ResponsiveImageComponent;
+
+
+/***/ }),
+
+/***/ "./src/app/directives/scroll-animation.directive.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/directives/scroll-animation.directive.ts ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var common_1 = __webpack_require__(/*! @angular/common */ "@angular/common");
+var ScrollAnimationDirective = /** @class */ (function () {
+    function ScrollAnimationDirective(platformId, el) {
+        this.platformId = platformId;
+        this.el = el;
+        this.animationTrigger = 'show';
+    }
+    ScrollAnimationDirective.prototype.ngOnInit = function () {
+        if (common_1.isPlatformBrowser(this.platformId)) {
+            this.animationTrigger = 'hide';
+        }
+        else {
+            this.animationTrigger = 'show';
+        }
+    };
+    ScrollAnimationDirective.prototype.checkScroll = function () {
+        if (common_1.isPlatformBrowser(this.platformId)) {
+            var componentPosition = this.el.nativeElement.offsetTop;
+            var scrollPosition = window.pageYOffset;
+            var windowHeight = window.innerHeight;
+            var offset = this.offset || 400;
+            if (scrollPosition + windowHeight - offset >= componentPosition) {
+                this.animationTrigger = 'show';
+            }
+            else if (scrollPosition + windowHeight - offset * 2 < componentPosition) {
+                this.animationTrigger = 'hide';
+            }
+        }
+    };
+    return ScrollAnimationDirective;
+}());
+exports.ScrollAnimationDirective = ScrollAnimationDirective;
 
 
 /***/ }),
@@ -1485,16 +1486,10 @@ var RenderType_StartComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_Star
 exports.RenderType_StartComponent = RenderType_StartComponent;
 function View_StartComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-hero", [], null, null, null, i2.View_HeroComponent_0, i2.RenderType_HeroComponent)), i1.ɵdid(1, 114688, null, 0, i3.HeroComponent, [i1.PLATFORM_ID], { hero: [0, "hero"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.hero; _ck(_v, 1, 0, currVal_0); }, null); }
 function View_StartComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_2)), i1.ɵdid(2, 16384, null, 0, i4.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var currVal_0 = ((_v.context.$implicit.type === "hero") && _v.context.$implicit.hero); _ck(_v, 2, 0, currVal_0); }, null); }
-function View_StartComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-news", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 1).checkScroll($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, i5.View_NewsComponent_0, i5.RenderType_NewsComponent)), i1.ɵdid(1, 114688, null, 0, i6.NewsComponent, [i1.PLATFORM_ID, i1.ElementRef], { news: [0, "news"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.news; _ck(_v, 1, 0, currVal_0); }, null); }
+function View_StartComponent_4(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-news", [], null, null, null, i5.View_NewsComponent_0, i5.RenderType_NewsComponent)), i1.ɵdid(1, 114688, null, 0, i6.NewsComponent, [], { news: [0, "news"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.news; _ck(_v, 1, 0, currVal_0); }, null); }
 function View_StartComponent_5(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-article", [], null, null, null, i7.View_ArticleComponent_0, i7.RenderType_ArticleComponent)), i1.ɵdid(1, 114688, null, 0, i8.ArticleComponent, [], { article: [0, "article"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.article; _ck(_v, 1, 0, currVal_0); }, null); }
 function View_StartComponent_6(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-file-list", [], null, null, null, i9.View_FileListComponent_0, i9.RenderType_FileListComponent)), i1.ɵdid(1, 114688, null, 0, i10.FileListComponent, [], { files: [0, "files"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.files; _ck(_v, 1, 0, currVal_0); }, null); }
-function View_StartComponent_7(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gallery", [], null, [["window", "scroll"]], function (_v, en, $event) { var ad = true; if (("window:scroll" === en)) {
-        var pd_0 = (i1.ɵnov(_v, 1).checkScroll($event) !== false);
-        ad = (pd_0 && ad);
-    } return ad; }, i11.View_GalleryComponent_0, i11.RenderType_GalleryComponent)), i1.ɵdid(1, 114688, null, 0, i12.GalleryComponent, [i1.PLATFORM_ID, i1.ElementRef], { gallery: [0, "gallery"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.gallery; _ck(_v, 1, 0, currVal_0); }, null); }
+function View_StartComponent_7(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-gallery", [], null, null, null, i11.View_GalleryComponent_0, i11.RenderType_GalleryComponent)), i1.ɵdid(1, 114688, null, 0, i12.GalleryComponent, [], { gallery: [0, "gallery"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.gallery; _ck(_v, 1, 0, currVal_0); }, null); }
 function View_StartComponent_8(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-contact-table", [], null, null, null, i13.View_ContactTableComponent_0, i13.RenderType_ContactTableComponent)), i1.ɵdid(1, 114688, null, 0, i14.ContactTableComponent, [], { contactTable: [0, "contactTable"] }, null)], function (_ck, _v) { var currVal_0 = _v.parent.context.$implicit.contactTable; _ck(_v, 1, 0, currVal_0); }, null); }
 function View_StartComponent_3(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 10, null, null, null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_4)), i1.ɵdid(2, 16384, null, 0, i4.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_5)), i1.ɵdid(4, 16384, null, 0, i4.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_6)), i1.ɵdid(6, 16384, null, 0, i4.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_7)), i1.ɵdid(8, 16384, null, 0, i4.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_8)), i1.ɵdid(10, 16384, null, 0, i4.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null), (_l()(), i1.ɵand(0, null, null, 0))], function (_ck, _v) { var currVal_0 = ((_v.context.$implicit.type === "news") && _v.context.$implicit.news); _ck(_v, 2, 0, currVal_0); var currVal_1 = ((_v.context.$implicit.type === "article") && _v.context.$implicit.article); _ck(_v, 4, 0, currVal_1); var currVal_2 = ((_v.context.$implicit.type === "files") && _v.context.$implicit.files); _ck(_v, 6, 0, currVal_2); var currVal_3 = ((_v.context.$implicit.type === "gallery") && _v.context.$implicit.gallery); _ck(_v, 8, 0, currVal_3); var currVal_4 = ((_v.context.$implicit.type === "contactTable") && _v.context.$implicit.contactTable); _ck(_v, 10, 0, currVal_4); }, null); }
 function View_StartComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-top-bar", [], null, null, null, i15.View_TopBarComponent_0, i15.RenderType_TopBarComponent)), i1.ɵdid(1, 114688, null, 0, i16.TopBarComponent, [], null, null), (_l()(), i1.ɵeld(2, 0, null, null, 4, "main", [["role", "main"]], null, null, null, null, null)), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_1)), i1.ɵdid(4, 802816, null, 0, i4.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_StartComponent_3)), i1.ɵdid(6, 802816, null, 0, i4.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null), (_l()(), i1.ɵeld(7, 0, null, null, 1, "app-footer", [], null, null, null, i17.View_FooterComponent_0, i17.RenderType_FooterComponent)), i1.ɵdid(8, 114688, null, 0, i18.FooterComponent, [i1.PLATFORM_ID, i19.ContentService], null, null)], function (_ck, _v) { var _co = _v.component; _ck(_v, 1, 0); var currVal_0 = _co.page.modules; _ck(_v, 4, 0, currVal_0); var currVal_1 = _co.page.modules; _ck(_v, 6, 0, currVal_1); _ck(_v, 8, 0); }, null); }
@@ -2224,7 +2219,7 @@ exports.LAZY_MODULE_MAP = {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Kristoffer/Documents/Privat/Development/lind/src/main.server.ts */"./src/main.server.ts");
+module.exports = __webpack_require__(/*! /Users/ksthen/Documents/Dev/lind/src/main.server.ts */"./src/main.server.ts");
 
 
 /***/ }),
