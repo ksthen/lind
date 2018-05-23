@@ -55,7 +55,7 @@ export const reglerContent: Page = {
           Det är förbjudet att slänga trädgårdsavfall eller fyllnadsmaterial (jord, lera etc.) i skogen runt området. Brännbart trädgårdsavfall från egen tomt är tillåtet att slänga i de sopbilar som används vid städdagarna.
           I samband med förändringen av sophanteringen 2005 för hushållen i området har styrelsen tagit fram följande policy för att vägleda föreningens medlemmar. 
 
-          [Länk till policy ](dokumentu)
+          [Länk till policy ](dokument)
           
           ### Garage
           Varje medlem i Samfälligheten tillhandahålls en parkeringsplats i till Samfälligheten tillhörande garagelängor.
