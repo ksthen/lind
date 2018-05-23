@@ -35,15 +35,15 @@ export const startContent: Page = {
               newsItems: [
                 {
                   top: 'Maj 2018',
+                  header: 'Ny hemsida',
+                  text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida som inte kräver inloggning. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
+                  image: './assets/images/image1.jpg',
+                },                 
+                {
+                  top: 'Maj 2018',
                   header: 'Ny "Vippy"',
                   text: 'Ny "vippy" gungbräda är på plats!',
                   image: './assets/images/image16.jpg',
-                }, 
-                {
-                  top: 'Maj 2018',
-                  header: 'Ny hemsida',
-                  text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida med ett minimum personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
-                  image: './assets/images/image1.jpg',
                 },      
                 {
                   top: '21-22 Oktober',

@@ -637,7 +637,7 @@ var i3 = __webpack_require__(/*! ./file-list.component */ "./src/app/components/
 var styles_FileListComponent = [i0.styles];
 var RenderType_FileListComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_FileListComponent, data: {} });
 exports.RenderType_FileListComponent = RenderType_FileListComponent;
-function View_FileListComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "col-sm-12 col-md-6 col-lg-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 6, "a", [["class", "media text-dark"], ["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "button", [["class", "btn btn-primary align-self-middle btn-circle mr-3 d-flex justify-content-center align-items-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, ":svg:svg", [["viewBox", "0 0 384 512"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, ":svg:path", [["d", "M224 136V0H24C10.3 0 0 10.8 0 24v464c0 13.3 10.5 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-13 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "div", [["class", "media-body pt-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(8, null, ["", ""]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.files.path + _v.context.$implicit.file); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.header; _ck(_v, 8, 0, currVal_1); }); }
+function View_FileListComponent_2(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 8, "div", [["class", "col-sm-12 col-md-12 col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 0, "hr", [], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 6, "a", [["class", "media text-dark"], ["target", "_blank"]], [[8, "href", 4]], null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "button", [["class", "btn btn-primary align-self-middle btn-circle mr-3 d-flex justify-content-center align-items-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, ":svg:svg", [["viewBox", "0 0 384 512"], ["xmlns", "http://www.w3.org/2000/svg"]], null, null, null, null, null)), (_l()(), i1.ɵeld(5, 0, null, null, 0, ":svg:path", [["d", "M224 136V0H24C10.3 0 0 10.8 0 24v464c0 13.3 10.5 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-13 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"]], null, null, null, null, null)), (_l()(), i1.ɵeld(6, 0, null, null, 2, "div", [["class", "media-body pt-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 1, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(8, null, ["", ""]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.files.path + _v.context.$implicit.file); _ck(_v, 2, 0, currVal_0); var currVal_1 = _v.context.$implicit.header; _ck(_v, 8, 0, currVal_1); }); }
 function View_FileListComponent_1(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 6, "div", [["class", "container pt-4 pb-5"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 2, "div", [["class", "col-sm-12"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(4, null, ["", ""])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_FileListComponent_2)), i1.ɵdid(6, 802816, null, 0, i2.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.files.files; _ck(_v, 6, 0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.files.header; _ck(_v, 4, 0, currVal_0); }); }
 function View_FileListComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵand(16777216, null, null, 1, null, View_FileListComponent_1)), i1.ɵdid(1, 16384, null, 0, i2.NgIf, [i1.ViewContainerRef, i1.TemplateRef], { ngIf: [0, "ngIf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.files; _ck(_v, 1, 0, currVal_0); }, null); }
 exports.View_FileListComponent_0 = View_FileListComponent_0;
@@ -1766,7 +1766,7 @@ exports.dokumentContent = {
         {
             type: 'files',
             files: {
-                header: 'Dokument och ritningar',
+                header: 'Dokument',
                 path: './assets/documents/',
                 files: [
                     {
@@ -1793,8 +1793,237 @@ exports.dokumentContent = {
                         file: 'Information-Luftvärmepumpar-Samf-Ö-Lindås-040816.pdf'
                     },
                     {
-                        header: 'Mall motion till stämma',
+                        header: 'Mall för motion till stämma',
                         file: 'Mall-för-motion-till-stämma_2.doc '
+                    },
+                ],
+            },
+        },
+        {
+            type: 'files',
+            files: {
+                header: 'Ritningar',
+                path: './assets/ritningar/',
+                files: [
+                    {
+                        header: 'Atriumhus Mått - Litt A20-Litt',
+                        file: 'Atriumhus Mått - Litt A20-Litt.pdf'
+                    },
+                    {
+                        header: 'Atriumhus Mått A20',
+                        file: 'Atriumhus Mått A20.pdf'
+                    },
+                    {
+                        header: 'Fasader 13',
+                        file: 'Fasader 13.pdf'
+                    },
+                    {
+                        header: 'Förstärkning av befintligt takstag SK01',
+                        file: 'Förstärkning av befintligt takstag SK01.pdf'
+                    },
+                    {
+                        header: 'Garage fasader 05',
+                        file: 'Garage fasader 05.pdf'
+                    },
+                    {
+                        header: 'Garage plintar 04',
+                        file: 'Garage plintar 04.pdf'
+                    },
+                    {
+                        header: 'Grundläggning hus 1-50 K5',
+                        file: 'Grundläggning hus 1-50 K5.pdf'
+                    },
+                    {
+                        header: 'Grundläggning hus 51-102 K6',
+                        file: 'Grundläggning hus 51-102 K6.pdf'
+                    },
+                    {
+                        header: 'Grundläggning hus 103-135 K7',
+                        file: 'Grundläggning hus 103-135 K7.pdf'
+                    },
+                    {
+                        header: 'Grundsektion typ A K8',
+                        file: 'Grundsektion typ A K8.pdf'
+                    },
+                    {
+                        header: 'Grundsektion typ A K9',
+                        file: 'Grundsektion typ A K9.pdf'
+                    },
+                    {
+                        header: 'Kabel-TV Lv norr 03',
+                        file: 'Kabel-TV Lv norr 03.pdf'
+                    },
+                    {
+                        header: 'Kort presentation av Askim skommun 07',
+                        file: 'Kort presentation av Askim skommun 07.pdf'
+                    },
+                    {
+                        header: 'Kortfatad byggnadsbeskrivning 06',
+                        file: 'Kortfatad byggnadsbeskrivning 06.pdf'
+                    },
+                    {
+                        header: 'Plan och fasad A2',
+                        file: 'Plan och fasad A2.pdf'
+                    },
+                    {
+                        header: 'Planförslag C C2',
+                        file: 'Planförslag C C2.pdf'
+                    },
+                    {
+                        header: 'Planförslag C C3',
+                        file: 'Planförslag C C3.pdf'
+                    },
+                    {
+                        header: 'Planförslag C C5',
+                        file: 'Planförslag C C5.pdf'
+                    },
+                    {
+                        header: 'Planförslag D D2',
+                        file: 'Planförslag D D2.pdf'
+                    },
+                    {
+                        header: 'Planförslag D D4',
+                        file: 'Planförslag D D4.pdf'
+                    },
+                    {
+                        header: 'Plank K32',
+                        file: 'Plank K32.pdf'
+                    },
+                    {
+                        header: 'Plank mitt A07',
+                        file: 'Plank mitt A07.pdf'
+                    },
+                    {
+                        header: 'Plank norr A06',
+                        file: 'Plank norr A06.pdf'
+                    },
+                    {
+                        header: 'Plank söder A08',
+                        file: 'Plank söder A08.pdf'
+                    },
+                    {
+                        header: 'Planlösning 12',
+                        file: 'Planlösning 12.pdf'
+                    },
+                    {
+                        header: 'Principförslag VA A4',
+                        file: 'Principförslag VA A4.pdf'
+                    },
+                    {
+                        header: 'Pålat hus 104,120,121,126,128,131 K13',
+                        file: 'Pålat hus 104,120,121,126,128,131 K13.pdf'
+                    },
+                    {
+                        header: 'Pålat hus bjälklag armering K10',
+                        file: 'Pålat hus bjälklag armering K10.pdf'
+                    },
+                    {
+                        header: 'Pålat hus grundbjälklag K11',
+                        file: 'Pålat hus grundbjälklag K11.pdf'
+                    },
+                    {
+                        header: 'Pålat hus grundbjälklag K12',
+                        file: 'Pålat hus grundbjälklag K12.pdf'
+                    },
+                    {
+                        header: 'Pålat hus sektioner K3',
+                        file: 'Pålat hus sektioner K3.pdf'
+                    },
+                    {
+                        header: 'Pålplan hus 10,15,16, 29-31  K1',
+                        file: 'Pålplan hus 10,15,16, 29-31  K1.pdf'
+                    },
+                    {
+                        header: 'Pålplan hus 64-66, 133-135, 109,110,115,116 K2',
+                        file: 'Pålplan hus 64-66, 133-135, 109,110,115,116 K2.pdf'
+                    },
+                    {
+                        header: 'Spolbrunn och dränering VA4',
+                        file: 'Spolbrunn och dränering VA4.pdf'
+                    },
+                    {
+                        header: 'Spont vid hus 1 o 2 K4',
+                        file: 'Spont vid hus 1 o 2 K4.pdf'
+                    },
+                    {
+                        header: 'Spont vid hus 76 K14',
+                        file: 'Spont vid hus 76 K14.pdf'
+                    },
+                    {
+                        header: 'Takplan K24',
+                        file: 'Takplan K24.pdf'
+                    },
+                    {
+                        header: 'Takstol K25',
+                        file: 'Takstol K25.pdf'
+                    },
+                    {
+                        header: 'VA Av norr 01',
+                        file: 'VA Av norr 01.pdf'
+                    },
+                    {
+                        header: 'VA Av söder 02',
+                        file: 'VA Av söder 02.pdf'
+                    },
+                    {
+                        header: 'Vatten och avloppsledningar Av norr VA1',
+                        file: 'Vatten och avloppsledningar Av norr VA1.pdf'
+                    },
+                    {
+                        header: 'Vatten och avloppsledningar Av söder - Lv norr VA2',
+                        file: 'Vatten och avloppsledningar Av söder - Lv norr VA2.pdf'
+                    },
+                    {
+                        header: 'Vatten och avloppsledningar LV söder VA3',
+                        file: 'Vatten och avloppsledningar LV söder VA3.pdf'
+                    },
+                    {
+                        header: 'Väggar K21',
+                        file: 'Väggar K21.pdf'
+                    },
+                    {
+                        header: 'Väggsektioner K22',
+                        file: 'Väggsektioner K22.pdf'
+                    },
+                    {
+                        header: 'Väggsektioner K23',
+                        file: 'Väggsektioner K23.pdf'
+                    },
+                    {
+                        header: 'Översikt Av norr 15',
+                        file: 'Översikt Av norr 15.pdf'
+                    },
+                    {
+                        header: 'Översikt Av söder 09',
+                        file: 'Översikt Av söder 09.pdf'
+                    },
+                    {
+                        header: 'Översikt hela området A10',
+                        file: 'Översikt hela området A10.pdf'
+                    },
+                    {
+                        header: 'Översikt mitt 1',
+                        file: 'Översikt mitt 1.pdf'
+                    },
+                    {
+                        header: 'Översikt mitt A02',
+                        file: 'Översikt mitt A02.pdf'
+                    },
+                    {
+                        header: 'Översikt norr 2',
+                        file: 'Översikt norr 2.pdf'
+                    },
+                    {
+                        header: 'Översikt norr A01',
+                        file: 'Översikt norr A01.pdf'
+                    },
+                    {
+                        header: 'Översikt söder 3',
+                        file: 'Översikt söder 3.pdf'
+                    },
+                    {
+                        header: 'Översikt söder A03',
+                        file: 'Översikt söder A03.pdf'
                     },
                 ],
             },
@@ -2148,15 +2377,15 @@ exports.startContent = {
                 newsItems: [
                     {
                         top: 'Maj 2018',
-                        header: 'Ny "Vippy"',
-                        text: 'Ny "vippy" gungbräda är på plats!',
-                        image: './assets/images/image16.jpg',
+                        header: 'Ny hemsida',
+                        text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida som inte kräver inloggning. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
+                        image: './assets/images/image1.jpg',
                     },
                     {
                         top: 'Maj 2018',
-                        header: 'Ny hemsida',
-                        text: 'Till följd av GDPR vill vi minska hanteringen av personuppgifter. Vi har därför byggt en ny hemsida med ett minimum personuppgifter. Vi kommer även att stänga ner epost-listorna tills vidare. Medlemsregister, städområden, årsmötesprotokoll mm. tillhandahålls av styrelsen på begäran.',
-                        image: './assets/images/image1.jpg',
+                        header: 'Ny "Vippy"',
+                        text: 'Ny "vippy" gungbräda är på plats!',
+                        image: './assets/images/image16.jpg',
                     },
                     {
                         top: '21-22 Oktober',
