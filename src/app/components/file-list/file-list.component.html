@@ -5,7 +5,7 @@
     </div> 
     <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let f of files.files">
         <hr>    
-        <a class="media text-dark" [href]="f.url">  
+        <a class="media text-dark" target="_blank" [href]="files.path + f.file">  
             
             <button 
               class="btn btn-primary align-self-middle btn-circle mr-3 d-flex justify-content-center align-items-center">

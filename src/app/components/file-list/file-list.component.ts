@@ -3,13 +3,14 @@ import { staggerFade } from '../../app.animations';
 
 export interface FileList {
   header: string;
+  path: string;
   files: File[];
 }
 
 export interface File {
   header: string;
   text?: string;
-  url: string;
+  file: string;
 }
 
 @Component({
